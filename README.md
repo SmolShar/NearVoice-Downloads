@@ -1,4 +1,4 @@
-# NearVoice downloads - experimental 0.2.0
+# NearVoice downloads - experimental 0.2.1
 
 NearVoice is a modified version of [Ricimon's ProximityVoiceChat](https://github.com/Ricimon/FFXIV-ProximityVoiceChat). Original copyright (c) 2024 Ricimon and the MIT license are retained. It is not an official upstream or Square Enix release. This repository contains only the public installer index, release binary and notices; the fork's development source is maintained separately.
 
@@ -18,16 +18,20 @@ NearVoice 0.2.0 reads the local service configuration from an existing Proximity
 
 The current client depends on the original service and its availability. This distribution does not provide a separate voice backend and does not claim upstream endorsement or an unlimited service entitlement. The code license and permission to use an independently operated service are separate matters.
 
-Both peers need NearVoice 0.2.0 and the same world/map/instance. `/yakin` or `/nearvoice` opens the panel. Automatic proximity connects when the character and map are ready. The first migration starts the microphone muted; select the correct devices and enable it when ready. Optional voice-driven talking animation is experimental and disabled by default.
+Both peers need NearVoice 0.2.1 and the same world/map/instance. `/yakin` or `/nearvoice` opens the panel. Automatic proximity connects when the character and map are ready. The first migration starts the microphone muted; select the correct devices and enable it when ready. Optional voice-driven talking animation is experimental and disabled by default.
 
 ## Validation and licenses
 
 63 focused checks and native two-way local transport/reconnection tests passed. Real two-computer Internet speech, physical microphone behavior, TURN fallback and in-game installation remain separate acceptance checks; public availability does not claim those tests passed.
 
-The release ZIP is flat: NearVoice.dll and NearVoice.json are at its root (Dalamud API 15, assembly 0.2.0.0). SHA256 of latest.zip:
+The release ZIP is flat: NearVoice.dll and NearVoice.json are at its root (Dalamud API 15, assembly 0.2.1.0). SHA256 of latest.zip:
 
 ```text
-AD3C2DBF5B710DCE3E63E9FE695210B51D3B6F29FD5E34829D924D480A2B1902
+373FE9F1581A60D49AE2A1C225D6DB4D9A6C02517D31D9FA42E9579A3BE68F0E
 ```
 
 The original [LICENSE](LICENSE), [third-party notices](THIRD-PARTY-NOTICES.md), and full dependency licenses inside latest.zip are retained. The native WebRTC correction is documented in those notices.
+
+## 0.2.1 hotfix
+
+Fixes native WebRTC/VAD loading when Dalamud loads the managed plugin from memory (Assembly.Location is empty). The old path failure could remove a discovered peer and leave only yourself in the list. PluginInterface.AssemblyLocation supplies the real plugin directory. Seven focused regression checks pass with the exact initializer, real native calls, missing-file checks, immutable paths and original-native preload isolation. The earlier 63 checks are prior evidence; two-computer in-game voice needs a fresh test after updating.

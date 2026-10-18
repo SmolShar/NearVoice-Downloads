@@ -3,7 +3,7 @@
     "Author": "NearVoice contributors; original by Ricimon",
     "Name": "NearVoice",
     "InternalName": "NearVoice",
-    "AssemblyVersion": "0.2.0.0",
+    "AssemblyVersion": "0.2.1.0",
     "DalamudApiLevel": 15,
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/SmolShar/NearVoice-Downloads",
@@ -11,9 +11,9 @@
     "Description": "Automatic world/map proximity voice. /yakin opens the panel. Requires original ProximityVoiceChat local service settings.",
     "IsHide": false,
     "IsTestingExclusive": false,
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/v0.2.0/latest.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/v0.2.0/latest.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/v0.2.0/latest.zip",
-    "LastUpdate": 1792296303
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/v0.2.1/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/v0.2.1/latest.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/v0.2.1/latest.zip",
+    "LastUpdate": 1792297470
   }
 ]
