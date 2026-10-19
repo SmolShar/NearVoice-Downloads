@@ -24,19 +24,15 @@ The verified local near override is session-only, under Camera diagnostics. The 
 
 ## Face / webcam
 
-Enable the matching Customize+ fork. Open `/nearface`, start reception and explicitly enable the wanted components. Then run:
+Enable the matching Customize+ fork and open `/nearface`. **Start live session (webcam + receiver)** explicitly opens the bundled webcam and local receiver together. No separate Python setup or console launcher is needed. **Stop live session** or unloading NearFace stops its owned helper. A parent-stdin EOF also stops capture. Nothing opens the webcam merely by loading the plugin or opening its panel.
 
-```text
-%APPDATA%\XIVLauncher\installedPlugins\NearFaceDiagnostics\0.2.3.0\NearFaceWebcam\START-WEBCAM.cmd
-```
+Components still start disabled: preview your actual face, then choose live eyelids/mouth/brows. Measured eyelid rotations remain opt-in for the correct sculpt. Tongue and native gaze retargeting are incomplete. Only local numeric coefficients are transmitted over loopback; webcam images are not recorded/uploaded.
 
-The webcam starts only when you launch that helper. Stop it with Ctrl+C or close its console; `/nearface stop` stops game reception only. The helper uses bundled Python/models, CPU inference and numeric coefficients over loopback. It does not record/upload webcam images. `SELF-TEST.cmd` does blank-image inference without opening a camera.
-
-Mouth/brows/smile/sideways mouth are approximate. Measured eyelid rotations default off: do not blindly apply someone else's sculpt calibration. Tongue and native eye-gaze retargeting are incomplete.
+If you explicitly launch START-WEBCAM.cmd manually, that independent console must be stopped there; the plugin only controls the helper it started itself. Missing helper/camera/device errors are shown in the panel.
 
 ## Source and validation limits
 
-Corresponding source is attached to this release in **AethrAppLocalDiscord-1.3.2.1-source.zip** and **Face-Camera-Corresponding-Source.zip**. Webcam helper/model source and notices are inside its payload. Original AGPL/Apache/MIT/BSD and dependency notices are retained. Official Discord SDK headers/import libraries must be obtained separately from Discord for rebuilding its helper; the bundled DLL is unmodified and integrated into that helper.
+Current corresponding source: [phone 1.3.2.2](https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-webcam-hotfix-2026-10-19/AethrAppLocalDiscord-1.3.2.2-source.zip), [NearFace controls 0.2.4.0](https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-webcam-hotfix-2026-10-19/NearFaceControls-0.2.4.0-source.zip). [Camera and Customize+ source](https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-face-2026-10-19-preview/Face-Camera-Corresponding-Source.zip) is unchanged. Webcam runtime/model source and original notices are inside its payload. Original AGPL/Apache/MIT/BSD notices are retained. Obtain official Discord SDK headers/import libraries separately for rebuilding the unchanged native helper; its integrated DLL and notices remain unmodified.
 
 Offline tests/builds, portable blank inference, wire smoke, archive hashes and anonymous downloads were checked. A prior standalone human OAuth test returned 89 real friends. This does **not** establish native game presentation, real DM send/receive, advanced expressions or mounts. Those still require runtime acceptance. No account configuration, OAuth token, credential, captured webcam image or user profile is included.
 
