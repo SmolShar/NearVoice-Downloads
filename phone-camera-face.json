@@ -1,0 +1,92 @@
+[
+  {
+    "Author": "XeldarAlz; local Discord adaptation",
+    "Name": "Aethr App (local Discord)",
+    "InternalName": "AethrAppLocalDiscord",
+    "AssemblyVersion": "1.3.2.1",
+    "DalamudApiLevel": 15,
+    "Punchline": "Your existing phone interface with your Discord friends.",
+    "Description": "Private local edition based on Aetherphone. Uses official Discord authorization for contacts and text chat. Aethernet services and unchecked native media/browser playback are disabled.",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/XeldarAlz/FFXIV-Aetherphone",
+    "IconUrl": "https://raw.githubusercontent.com/XeldarAlz/FFXIV-Aetherphone/master/src/Aetherphone/Images/Icon.png",
+    "Tags": [
+      "phone",
+      "discord",
+      "contacts",
+      "messages",
+      "local"
+    ],
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-face-2026-10-19-preview/AethrAppLocalDiscord-1.3.2.1-preview.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-face-2026-10-19-preview/AethrAppLocalDiscord-1.3.2.1-preview.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-face-2026-10-19-preview/AethrAppLocalDiscord-1.3.2.1-preview.zip",
+    "LastUpdate": 1792399755
+  },
+  {
+    "Author": "YF",
+    "Name": "Musical Guide (local camera R5)",
+    "InternalName": "MusicalGuide",
+    "Description": "Local experimental camera R5. /mguide opens settings. Ability-only reduced animated yaw, local mount visibility and session-only near override. Not an official upstream release.",
+    "RepoUrl": "https://github.com/Sidiousious/musical-guide",
+    "Tags": [
+      "Camera"
+    ],
+    "IconUrl": "https://yfplugins.kinkop.eu/musical-guide.png",
+    "Punchline": "Enhanced camera distance control and first-person experience.",
+    "LoadPriority": -1,
+    "AssemblyVersion": "1.8.0.6",
+    "DalamudApiLevel": 15,
+    "ApplicableVersion": "any",
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-face-2026-10-19-preview/MusicalGuide-1.8.0.6-preview.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-face-2026-10-19-preview/MusicalGuide-1.8.0.6-preview.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-face-2026-10-19-preview/MusicalGuide-1.8.0.6-preview.zip",
+    "LastUpdate": 1792399755
+  },
+  {
+    "Author": "Risa and Contributors",
+    "Name": "Customize+ (local NearFace fork)",
+    "Punchline": "Customize your character beyond FFXIV's limitations.",
+    "Description": "Local experimental fork of Customize+ 2.2.1.3. Original profiles remain active; optional local face/head layers compose inside the existing render boundary. Not an official Aether Tools release. Native visual calibration is required.",
+    "InternalName": "CustomizePlus",
+    "ApplicableVersion": "any",
+    "AssemblyVersion": "2.2.1.6",
+    "RepoUrl": "https://github.com/Aether-Tools/CustomizePlus",
+    "Tags": [
+      "Anamnesis",
+      "Customization",
+      "Appearance",
+      "Character"
+    ],
+    "ImageUrls": null,
+    "IconUrl": "https://raw.githubusercontent.com/Aether-Tools/CustomizePlus/main/Data/icon.png",
+    "DalamudApiLevel": 15,
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-face-2026-10-19-preview/CustomizePlus-2.2.1.6-preview.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-face-2026-10-19-preview/CustomizePlus-2.2.1.6-preview.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-face-2026-10-19-preview/CustomizePlus-2.2.1.6-preview.zip",
+    "LastUpdate": 1792399755
+  },
+  {
+    "Author": "NearFace contributors",
+    "Name": "NearFace Local Controls (prototype)",
+    "InternalName": "NearFaceDiagnostics",
+    "AssemblyVersion": "0.2.3.0",
+    "Description": "Local prototype. Starts stopped with animation disabled. /nearface opens controls. Receives numeric face coefficients on IPv4 loopback only and forwards fresh frames to the cooperative local C+ fork. Explicit bounded previews require visual calibration. Does not open a camera, alter saved C+ profiles or synchronize other players.",
+    "ApplicableVersion": "any",
+    "Tags": [
+      "local",
+      "diagnostics",
+      "experimental"
+    ],
+    "DalamudApiLevel": 15,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "Punchline": "Local face controls and read-only bone inventory for the matching C+ fork.",
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-face-2026-10-19-preview/NearFaceDiagnostics-0.2.3.0-preview.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-face-2026-10-19-preview/NearFaceDiagnostics-0.2.3.0-preview.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-face-2026-10-19-preview/NearFaceDiagnostics-0.2.3.0-preview.zip",
+    "LastUpdate": 1792399755
+  }
+]
