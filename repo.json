@@ -15,5 +15,96 @@
     "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/v0.2.1/latest.zip",
     "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/v0.2.1/latest.zip",
     "LastUpdate": 1792297470
+  },
+  {
+    "Author": "XeldarAlz; local Discord adaptation",
+    "Name": "Aethr App (local Discord)",
+    "InternalName": "AethrAppLocalDiscord",
+    "AssemblyVersion": "1.3.2.3",
+    "DalamudApiLevel": 15,
+    "Punchline": "Your existing phone interface with your Discord friends.",
+    "Description": "Private local edition based on Aetherphone. Uses official Discord authorization for contacts and text chat. Aethernet services and unchecked native media/browser playback are disabled.",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/XeldarAlz/FFXIV-Aetherphone",
+    "IconUrl": "https://raw.githubusercontent.com/XeldarAlz/FFXIV-Aetherphone/master/src/Aetherphone/Images/Icon.png",
+    "Tags": [
+      "phone",
+      "discord",
+      "contacts",
+      "messages",
+      "local"
+    ],
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-r3-r6-2026-10-19-preview/AethrAppLocalDiscord-1.3.2.3.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-r3-r6-2026-10-19-preview/AethrAppLocalDiscord-1.3.2.3.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-r3-r6-2026-10-19-preview/AethrAppLocalDiscord-1.3.2.3.zip",
+    "LastUpdate": 1792450016
+  },
+  {
+    "Author": "YF",
+    "Name": "Musical Guide (local camera R8)",
+    "InternalName": "MusicalGuideLocalCamera",
+    "Description": "Local camera R8: steady first-person eye, per-mount seat offsets and optional physical head tracking. NearFace 0.2.5 provides one webcam for facial expressions and head pose; optional OpenTrack loopback input. Use /mguide; turn MouseLock off for head tracking. Existing settings and the R7 near-fog correction are retained. Update and fully restart FFXIV. Experimental preview; physical webcam and native game acceptance remain pending.",
+    "RepoUrl": "https://github.com/Sidiousious/musical-guide",
+    "Tags": [
+      "Camera"
+    ],
+    "IconUrl": "https://yfplugins.kinkop.eu/musical-guide.png",
+    "Punchline": "Enhanced camera distance control and first-person experience.",
+    "LoadPriority": -1,
+    "AssemblyVersion": "1.8.0.10",
+    "DalamudApiLevel": 15,
+    "ApplicableVersion": "any",
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-r8-tracking-2026-10-20/MusicalGuideLocalCamera-1.8.0.10-preview.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-r8-tracking-2026-10-20/MusicalGuideLocalCamera-1.8.0.10-preview.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-r8-tracking-2026-10-20/MusicalGuideLocalCamera-1.8.0.10-preview.zip",
+    "LastUpdate": 1792471681,
+    "CanUnloadAsync": false
+  },
+  {
+    "Author": "Risa and Contributors",
+    "Name": "Customize+ (local NearFace fork)",
+    "Punchline": "Customize your character beyond FFXIV's limitations.",
+    "Description": "Local experimental fork of Customize+ 2.2.1.3. Original profiles remain active; optional local face/head layers compose inside the existing render boundary. Not an official Aether Tools release. Native visual calibration is required.",
+    "InternalName": "CustomizePlus",
+    "ApplicableVersion": "any",
+    "AssemblyVersion": "2.2.1.6",
+    "RepoUrl": "https://github.com/Aether-Tools/CustomizePlus",
+    "Tags": [
+      "Anamnesis",
+      "Customization",
+      "Appearance",
+      "Character"
+    ],
+    "ImageUrls": null,
+    "IconUrl": "https://raw.githubusercontent.com/Aether-Tools/CustomizePlus/main/Data/icon.png",
+    "DalamudApiLevel": 15,
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-face-2026-10-19-preview/CustomizePlus-2.2.1.6-preview.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-face-2026-10-19-preview/CustomizePlus-2.2.1.6-preview.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-face-2026-10-19-preview/CustomizePlus-2.2.1.6-preview.zip",
+    "LastUpdate": 1792399755
+  },
+  {
+    "Author": "NearFace contributors",
+    "Name": "NearFace Local Controls (prototype)",
+    "InternalName": "NearFaceDiagnostics",
+    "AssemblyVersion": "0.2.5.0",
+    "Description": "NearFace 0.2.5: one explicitly started webcam supplies local facial coefficients and head pose for Musical Guide R8. Fit checks, bounded filtering, fresh ordered input and explicit loss/reacquisition improve stability. /nearface opens controls; /mguide can start both webcam and camera tracking. Nothing opens the webcam automatically. Facial components remain opt-in and need sculpt calibration. Local numeric data only; no image recording or other-player synchronization.",
+    "ApplicableVersion": "any",
+    "Tags": [
+      "local",
+      "diagnostics",
+      "experimental"
+    ],
+    "DalamudApiLevel": 15,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "Punchline": "Local face controls and read-only bone inventory for the matching C+ fork.",
+    "AcceptsFeedback": true,
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-r8-tracking-2026-10-20/NearFaceDiagnostics-0.2.5.0.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-r8-tracking-2026-10-20/NearFaceDiagnostics-0.2.5.0.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-r8-tracking-2026-10-20/NearFaceDiagnostics-0.2.5.0.zip",
+    "LastUpdate": 1792471681
   }
 ]
