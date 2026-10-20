@@ -1,10 +1,21 @@
-# Phone, camera and local face preview
+# Unified local plugin installation — phone, camera and face
 
-Use this existing single URL in Dalamud `/xlsettings` → Experimental → Custom Plugin Repositories:
+Use the unified canonical URL in Dalamud `/xlsettings` → Experimental → Custom Plugin Repositories:
 
 ```text
-https://raw.githubusercontent.com/SmolShar/NearVoice-Downloads/main/phone-camera-face.json
+https://raw.githubusercontent.com/SmolShar/NearVoice-Downloads/main/repo.json
 ```
+
+The index now contains **NearVoice 0.2.1.0**, **AethrAppLocalDiscord 1.3.2.3**,
+**MusicalGuideLocalCamera 1.8.0.10**, **CustomizePlus 2.2.1.6** and
+**NearFaceDiagnostics 0.2.5.0**. Plugin binaries and saved settings are unchanged
+by this index consolidation.
+
+**Existing installations:** keep the old `phone-camera-face.json` repository
+enabled until source migration is complete. It is an identical compatibility
+mirror because Dalamud associates installed third-party updates with their
+original repository URL. New installations need only `repo.json`. See
+[the main installation instructions](README.md).
 
 Refresh `/xlplugins`. Update **Musical Guide (local camera R8) to 1.8.0.10** and
 **NearFace Local Controls (prototype) to 0.2.5.0**, then **fully exit and restart
@@ -41,7 +52,7 @@ configuration are retained.
 ## Quick setup
 
 1. Update **Musical Guide (local camera R8) 1.8.0.10** and **NearFace Local
-   Controls 0.2.5.0** through the existing `phone-camera-face.json` repository.
+   Controls 0.2.5.0** through the unified `repo.json` repository (the previous URL remains a compatibility mirror).
    Fully exit and restart FFXIV after updating the camera hooks.
 2. Open `/mguide`. The title must contain **mount + head tracking r8**. The
    internal assembly version stays 1.8.0.0 for configuration compatibility;
@@ -178,5 +189,4 @@ is waiting or paused.
 
 Original AGPL/Apache/MIT/BSD notices remain in their packages. No account
 configuration, OAuth credential, live capture or user profile is included.
-This separate index leaves the existing NearVoice `repo.json` installation and
-NearVoice 0.2.1.0 package unchanged.
+The unified `repo.json` contains all five plugins. NearVoice 0.2.1.0 and the other plugin binaries remain unchanged; `phone-camera-face.json` mirrors the same entries for existing installs.
