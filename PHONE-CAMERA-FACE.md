@@ -1,14 +1,26 @@
 # Phone, camera and local face preview
 
-Add this **single URL** in Dalamud `/xlsettings` > Experimental > Custom Plugin Repositories, enable and Save:
+Use this existing single URL in Dalamud `/xlsettings` → Experimental → Custom Plugin Repositories:
 
 ```text
 https://raw.githubusercontent.com/SmolShar/NearVoice-Downloads/main/phone-camera-face.json
 ```
 
-Refresh `/xlplugins` and use **All Plugins > All**. Install **Aethr App (local Discord)**, **Musical Guide (local camera R7)** and **NearFace Local Controls (prototype)** as needed. NearFace requires the matching **Customize+ (local NearFace fork)**. The existing Customize+ package still shares the upstream `CustomizePlus` identity: Dalamud can hide that entry when the official catalog contains the same identity. This camera update does not change or migrate that package. Retain an existing matching local Customize+ installation and its profiles. No system Python installation is needed.
+Refresh `/xlplugins`. Update **Musical Guide (local camera R8) to 1.8.0.10** and
+**NearFace Local Controls (prototype) to 0.2.5.0**, then **fully exit and restart
+FFXIV**. The installer identities and saved settings remain in place. Do not
+reset plugin data or repeat the earlier Musical Guide settings migration.
 
-Before enabling this local phone, disable the official Aetherphone, old PocketLink and LocalPhone. Back up existing plugin configurations; retain your Customize+ profiles. The local phone has its own configuration namespace and does not import the original Aethernet account.
+The matching **Customize+ (local NearFace fork) 2.2.1.6** remains the facial
+animation dependency. Head input can run without enabling facial components.
+The C+ package shares the upstream `CustomizePlus` identity and may be hidden
+by the official catalog; retain the existing matching local installation and
+profiles. No separate system Python installation is needed.
+
+Keep other Musical Guide copies disabled because they share hooks and `/mguide`.
+Before enabling the local phone, disable official Aetherphone, old PocketLink
+and LocalPhone. The local phone has its own configuration namespace and does
+not import the original Aethernet account.
 
 ## Phone — R3 1.3.2.3
 
@@ -18,31 +30,153 @@ R3 uses distinct window identities for Discord notifications, message history an
 
 The Aethernet social service is disabled in this edition. Ordinary personal Discord calls, general embedded browsing/video and the optional online Hunts feed are unavailable. This is not an official Aetherphone, Discord or Square Enix release.
 
-## Camera — R7 1.8.0.9 near-plane fog correction
 
-**Update Musical Guide (local camera R7) to 1.8.0.9, then fully exit and restart FFXIV.** The package still uses `MusicalGuideLocalCamera` and the same repository URL. Existing 1.8.0.8 camera settings, FOV, offsets and saved hand-clipping preference are retained. Keep other Musical Guide copies disabled; they share `/mguide` and camera hooks.
+## Camera R8 and NearFace 0.2.5
 
-Open `/mguide`. The title must contain **near fog fix r7**. The title's assembly version remains 1.8.0.0; the installer and file version are 1.8.0.9. This is a newly compiled camera behavior correction.
+This local preview adds a stable first-person view, per-mount seat offsets, and
+physical head input. It is a modified Musical Guide fork, not an official
+upstream or Square Enix release. The existing installer identity and camera
+configuration are retained.
 
-R6 could make distant scenery white/foggy when **Reduce hand / object clipping** was enabled. R7 changes the native camera's near distance consistently with projection generation, and restores its captured baseline on supported cleanup routes. The projection hook forwards native arguments unchanged and still requires the original executable, ABI, local owner and matrix proof. Other camera callbacks cannot suspend the owned local near value. The status label now reflects the current enabled state.
+## Quick setup
 
-Use **First Person Settings → First Person Adjustments / Hand clipping**. The saved **Automatically restore hand-clipping reduction** preference remains opt-in. For manual use, enter normal local first person and press **Test and enable hand-clipping reduction**; keep **Local near distance** at **0.010** for the original comparison. Compare the same scene with reduction off and on. Check that hand clipping improves without the white fog and that disabling restores the normal view. The code was built and its managed tests passed; this release has not been visually accepted inside FFXIV here.
+1. Update **Musical Guide (local camera R8) 1.8.0.10** and **NearFace Local
+   Controls 0.2.5.0** through the existing `phone-camera-face.json` repository.
+   Fully exit and restart FFXIV after updating the camera hooks.
+2. Open `/mguide`. The title must contain **mount + head tracking r8**. The
+   internal assembly version stays 1.8.0.0 for configuration compatibility;
+   the installer/file version is 1.8.0.10.
+3. Under First Person Settings, the R8 sections appear before the older camera
+   controls. **Steady view is enabled by default.** It anchors the eye to the
+   gameplay character frame and ignores animated head/root displacement and
+   animated yaw. It preserves configured FoV and eye offsets. Real character
+   movement, teleports and gameplay-facing changes remain real movement.
+4. **Mount camera starts disabled.** Mount up, enter first person, enable
+   **Binege ozel kamera konumunu kullan**, then set forward/up/side offsets.
+   Each mount ID has its own saved profile. This calibrates the game's native
+   first-person seat; it does not contain hand-authored presets for every mount.
+   **Koltuk hizasini yeniden al** or `/mguide mount-center` recalibrates it.
+5. **Head tracking starts disabled.** Turn off **MouseLock**, choose **NearFace
+   (tek webcam)**, and press **Webcam ve kafa takibini baslat**. Look straight
+   at the screen and hold still briefly. One webcam feeds the face and camera
+   paths independently. Facial components can remain disabled while head
+   tracking runs. No webcam opens merely because a plugin loads or a panel opens.
+6. Use **Bakisi ortala**, `/mguide center`, or **Ctrl+Alt+C** to establish a new
+   neutral view. Advanced controls set sensitivity, dead zone, smoothing,
+   maximum angles and axis inversion. If the device's direction is reversed,
+   change the corresponding inversion. **Webcam ve takibi durdur** stops both
+   tracking and the helper started by NearFace.
 
-The camera movement, reduced-motion yaw, local head coordination and mount options retain their existing behavior. R7 does not migrate settings from the original `MusicalGuide` identity. If you already transferred settings to `MusicalGuideLocalCamera`, no further transfer is needed. Do not reset plugin data.
+## Behavior and limits
 
-## Face / webcam
+- Stable on-foot view stops following animation-driven head motion. This is
+  separate from suppressing the game's actual actor movement or auto-facing;
+  those are not suppressed. The first valid eye calibration waits for an active
+  ability to finish rather than storing a displaced buff pose as the baseline.
+- Head input is additive to mouse look, with bounded angles, wrap-aware filtering,
+  outlier rejection, a dead zone and time-based smoothing. There is no camera
+  roll or physical translation in this release. Steady view is required while
+  tracking is enabled. Absolute vertical look is capped at 85 degrees in that
+  mode to avoid pole inversion; saved legacy limits remain stored.
+- Neutral calibration requires at least eight unique valid frames spanning
+  400 ms. Repeated IPC polls do not count as new frames. Source/session changes,
+  ownership changes and longer tracking loss require a new stable center.
+  Lost or stale input returns toward neutral instead of freezing indefinitely.
+- The built-in NearFace path reports fit quality and explicit loss. A numeric
+  score is not biometric identity confidence. Large geometry changes, low
+  confidence, cropped faces and detected multiple faces can pause input. The
+  detector has a two-face budget, not a guarantee of detecting every background
+  face. Facial expressions and head pose use different filters.
+- Right mouse steering, **MouseLock**, flying and diving suspend physical head
+  input. Look is recalibrated when supported control resumes. Seat offsets can
+  still work while flying or diving. Pillion riders and unsupported camera
+  ownership/control transitions keep native positioning.
+- While tracking is enabled, the game's first-person camera auto-adjustment is
+  temporarily set to Never. The captured previous option is restored when
+  disabled only if the user or another controller has not replaced it. A later
+  external change pauses tracking rather than being repeatedly overwritten.
+- GPose, cutscenes, zoning, event cameras and detected Brio/Ktisis camera owners
+  do not receive the new gameplay tracking. Existing GPose behavior remains
+  outside the new tracking path. Mount position smoothing affects local seat
+  offsets only; actual world motion and teleports are not delayed.
+- `/mguide tracking off` turns camera input off. Use `/nearface stop` as well
+  to close the webcam, or use the combined stop button. A separately launched
+  manual webcam console remains under its own owner's control.
 
-Enable the matching Customize+ fork and open `/nearface`. **Start live session (webcam + receiver)** explicitly opens the bundled webcam and local receiver together. No separate Python setup or console launcher is needed. **Stop live session** or unloading NearFace stops its owned helper. A parent-stdin EOF also stops capture. Nothing opens the webcam merely by loading the plugin or opening its panel.
+## Optional OpenTrack input
 
-Components still start disabled: preview your actual face, then choose live eyelids/mouth/brows. Measured eyelid rotations remain opt-in for the correct sculpt. Tongue and native gaze retargeting are incomplete. Only local numeric coefficients are transmitted over loopback; webcam images are not recorded/uploaded.
+NearFace is the integrated default. As an alternative, select OpenTrack and set
+its output to **UDP over network**, destination **127.0.0.1:4242** (or the same
+configured port). The receiver accepts the 48-byte six-double little-endian
+protocol. Translation is validated but ignored; yaw and pitch drive this view.
+Only one source runs at once. Do not run two independent captures against a
+webcam that cannot be shared.
 
-If you explicitly launch START-WEBCAM.cmd manually, that independent console must be stopped there; the plugin only controls the helper it started itself. Missing helper/camera/device errors are shown in the panel.
+The OpenTrack UDP protocol carries no tracking-validity or fit-quality field.
+It cannot distinguish a stream repeatedly transmitting a frozen pose from a
+person holding still. It is therefore not given fabricated face-loss confidence.
+Source reference: [OpenTrack UDP implementation at
+99815e8](https://github.com/opentrack/opentrack/blob/99815e8ae7aaaa84a2e956b12365a6441db34688/proto-udp/ftnoir_protocol_ftn.cpp).
 
-## Source and validation limits
+## Existing settings and hand-clipping reduction
 
-Current corresponding source: [phone R3 1.3.2.3](https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-r3-r6-2026-10-19-preview/AethrAppLocalDiscord-1.3.2.3-source.zip), [camera R7 1.8.0.9](https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-r7-near-fog-fix-2026-10-20/MusicalGuideLocalCamera-1.8.0.9-source.zip), [NearFace controls 0.2.4.0](https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-webcam-hotfix-2026-10-19/NearFaceControls-0.2.4.0-source.zip), and [Customize+ 2.2.1.6 in the existing preview source bundle](https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-face-2026-10-19-preview/Face-Camera-Corresponding-Source.zip). The NearFace and Customize+ source archives are unchanged by this release. Webcam runtime/model source and original notices remain inside the existing NearFace payload. Original AGPL/Apache/MIT/BSD notices are retained. Obtain official Discord SDK headers/import libraries separately for rebuilding the unchanged native helper; its integrated DLL and notices remain unmodified.
+No configuration reset or original-to-local migration is performed. Existing
+`MusicalGuideLocalCamera` FoV, offsets, head coordination and hand-clipping
+preferences remain. R7's guarded native near-distance correction is retained;
+the new mount camera does not enable that correction for mounts. Keep other
+Musical Guide copies disabled because they share hooks and commands.
 
-R7 was built with .NET SDK 10.0.402 and matching official Dalamud 15.0.3.8 references. All 35 projection/ownership tests and 67 existing camera math/pose tests passed. Reports distinguish managed/model checks from native game acceptance. R7 package checks also cover source-to-PDB hashes, archive contents, dependency metadata and repository version consistency. R3 package checks cover the supplied file hashes and metadata. Previous release builds, webcam smoke checks and standalone OAuth results are historical evidence, not newly rerun R3/R6 tests. Native game presentation, real DM send/receive, camera and mount behavior, and advanced expressions still require runtime acceptance. This update does not add advanced face channels or establish a complete avatar fix. No account configuration, OAuth token, credential, captured webcam image or user profile is included.
+The matching Customize+ 2.2.1.6 package and its saved profiles remain unchanged.
+Its local facial channels still require sculpt-specific visual calibration and
+explicit component enablement. This update is not complete tongue/gaze or
+52-blendshape retargeting and does not synchronize expressions to other players.
 
-This separate index leaves the existing NearVoice `repo.json` and releases unchanged.
+## Verification
 
+Both plugins were built using .NET SDK 10.0.402 and official Dalamud 15.0.3.8
+references. The following linked-source checks passed:
+
+| Area | Result | Scope |
+|---|---:|---|
+| Camera integration math | 953 assertions | Gameplay eye anchor, angle composition, overlay cleanup |
+| Existing camera math/pose | 67 tests | Regression checks, head mask and yaw policies |
+| Projection/near ownership | 35 tests | R7 fog/depth correction and cleanup policy |
+| Mount seat | 45 tests | Math/state and matching-SDK allocated native-layout fixtures |
+| Head input | 46 tests | State/filter math and real local UDP transport |
+| Presentation ownership | 20 tests | FoV/pitch/roll restoration and foreign replacements |
+| NearFace Python | 29 tests | Numeric pose/filters and owned helper quit/EOF |
+| NearFace controller | 49 checks | Production-linked protocol/IPC, real UDP and owned fixture process |
+
+The camera build reported one NU1900 warning because the NuGet vulnerability
+service was unavailable; this is not a completed vulnerability audit. Both
+compilations had zero errors. NearFace's controller build had zero warnings.
+The original portable Windows inference runtime and model are retained from the
+verified 0.2.4 package; old inference smoke tests are historical evidence.
+
+**Physical webcam signs/neutral pose, lighting/glasses, live FFXIV input/render
+ordering, actual mount placement and facial appearance still need user-side
+acceptance.** No live game or physical webcam was available in this build
+environment. A 250 ms freshness timeout measures input arrival age, not total
+capture-to-screen latency. If a rare receiver socket error occurs, the status
+requests a NearFace Stop/Start.
+
+First check while standing still: head right/up, center, face out of frame,
+face back in frame, mouse takeover, one rotating/buff ability, then mount and
+dismount. Use small offsets first. The in-panel status explains when tracking
+is waiting or paused.
+
+## Corresponding source and packages
+
+- [Camera R8 complete source](https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-r8-tracking-2026-10-20/MusicalGuideLocalCamera-1.8.0.10-source.zip) — application, tests,
+  manifest, packaging script, build instructions and original notices.
+- [NearFace 0.2.5 complete controls/helper source](https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-r8-tracking-2026-10-20/NearFaceControls-0.2.5.0-source.zip) —
+  controller, both Python modules, tests, build notes and verification.
+- [NearFace 0.2.5 Windows runtime](https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-r8-tracking-2026-10-20/NearFaceDiagnostics-0.2.5.0.zip) retains the original
+  portable runtime, model, OpenSeeFace vendor source and component licenses.
+- [Unchanged phone R3 source](https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-r3-r6-2026-10-19-preview/AethrAppLocalDiscord-1.3.2.3-source.zip).
+- [Unchanged Customize+ source bundle](https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-face-2026-10-19-preview/Face-Camera-Corresponding-Source.zip).
+
+Original AGPL/Apache/MIT/BSD notices remain in their packages. No account
+configuration, OAuth credential, live capture or user profile is included.
+This separate index leaves the existing NearVoice `repo.json` installation and
+NearVoice 0.2.1.0 package unchanged.

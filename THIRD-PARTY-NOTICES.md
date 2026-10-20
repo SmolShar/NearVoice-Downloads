@@ -32,12 +32,24 @@ The Windows/.NET SDK, Dalamud and original service credentials are not distribut
 
 NearVoice's Turkish panel reads the existing Windows Segoe UI font through a plugin-owned managed font handle. The Segoe UI font file is not redistributed in either archive. The optional talking animation uses API types supplied by the user's Dalamud/FFXIVClientStructs SDK; those SDK binaries are not included.
 
-## Separate phone and camera preview — phone R3 / camera R7
+## Separate phone and camera preview — phone R3 / camera R8 / NearFace 0.2.5
 
 The optional packages in `phone-camera-face.json` have their own upstream sources and notices:
 
 - **Aethr App (local Discord) R3 1.3.2.3** derives from [XeldarAlz/FFXIV-Aetherphone](https://github.com/XeldarAlz/FFXIV-Aetherphone). `AethrAppLocalDiscord-1.3.2.3.zip` retains the original AGPL-3.0-or-later `LICENSE.md`, `NOTICE`, `THIRD-PARTY-NOTICES.md`, trademark policy and component notices. Its modifications are identified in `LOCAL-EDITION.txt`. [Corresponding R3 source](https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-r3-r6-2026-10-19-preview/AethrAppLocalDiscord-1.3.2.3-source.zip) is provided separately.
-- **Musical Guide (local camera R7) 1.8.0.9** derives from [Sidiousious/musical-guide](https://github.com/Sidiousious/musical-guide). `MusicalGuideLocalCamera-1.8.0.9-preview.zip` retains `LICENSE.md`, `LICENSE-Brio-GPL3` and `LICENSE-FFXIVClientStructs.txt`. [Corresponding R7 source](https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-r7-near-fog-fix-2026-10-20/MusicalGuideLocalCamera-1.8.0.9-source.zip) includes the rebuilt application, tests, packaging instructions and modification notes. R7 corrects the projection-only near override using the live camera field and guarded baseline restoration. The separate installer identity and original PE assembly identity are retained. Original license bytes remain unchanged.
+- **Musical Guide (local camera R8) 1.8.0.10** derives from [Sidiousious/musical-guide](https://github.com/Sidiousious/musical-guide). `MusicalGuideLocalCamera-1.8.0.10-preview.zip` retains `LICENSE.md`, `LICENSE-Brio-GPL3` and `LICENSE-FFXIVClientStructs.txt`. [Corresponding R8 source](https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-r8-tracking-2026-10-20/MusicalGuideLocalCamera-1.8.0.10-source.zip) includes the rebuilt application, tests, packaging instructions and modification notes. R8 adds stable gameplay-eye, per-mount seat and head-input modules while retaining R7's live near-field correction and guarded baseline restoration. The separate installer identity and original PE assembly identity are retained. Original license bytes remain unchanged.
 
-The phone archive's `DiscordBridge` directory retains `Discord-SDK-License-Notices.txt` alongside the unchanged native helper and Discord SDK library. Official Discord SDK headers and import libraries are obtained separately to rebuild that helper. The existing NearFace and Customize+ packages retain their previously published source and notices, linked in [the phone/camera/face instructions](PHONE-CAMERA-FACE.md).
+The phone archive's `DiscordBridge` directory retains `Discord-SDK-License-Notices.txt` alongside the unchanged native helper and Discord SDK library. Official Discord SDK headers and import libraries are obtained separately to rebuild that helper. The Customize+ package remains unchanged, with its previously published source and notices linked in [the phone/camera/face instructions](PHONE-CAMERA-FACE.md).
 
+
+- **NearFace Local Controls 0.2.5.0** retains the original MIT `LICENSE-NearFace`.
+  [Corresponding modified controller/helper source](https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-r8-tracking-2026-10-20/NearFaceControls-0.2.5.0-source.zip) includes
+  the new numerical head-pose adapter and stability checks. The runtime archive
+  preserves the verified 0.2.4 portable Python/dependency/model/vendor payload
+  byte-for-byte outside the explicitly replaced NearFace files. OpenSeeFace
+  source is pinned to `50c09741897010faad721a218b2bbe14ecad6251`; its source and
+  licenses remain under `NearFaceWebcam/vendor/OpenSeeFace`. Runtime dependency
+  notices remain under `NearFaceWebcam/licenses` and their installed packages.
+- **Optional OpenTrack compatibility:** the independently written receiver uses
+  the published six-double UDP format. No OpenTrack executable or library is
+  included. Protocol reference: [opentrack/opentrack at 99815e8](https://github.com/opentrack/opentrack/blob/99815e8ae7aaaa84a2e956b12365a6441db34688/proto-udp/ftnoir_protocol_ftn.cpp).

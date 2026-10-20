@@ -24,9 +24,9 @@
   },
   {
     "Author": "YF",
-    "Name": "Musical Guide (local camera R7)",
+    "Name": "Musical Guide (local camera R8)",
     "InternalName": "MusicalGuideLocalCamera",
-    "Description": "Local camera R7 1.8.0.9: correction for white fog when Reduce hand / object clipping is enabled. Updates the native camera near distance consistently and restores its captured baseline. Existing MusicalGuideLocalCamera settings are retained. /mguide title: near fog fix r7. Update and fully restart FFXIV before testing. Experimental local fork; game visual acceptance is pending.",
+    "Description": "Local camera R8: steady first-person eye, per-mount seat offsets and optional physical head tracking. NearFace 0.2.5 provides one webcam for facial expressions and head pose; optional OpenTrack loopback input. Use /mguide; turn MouseLock off for head tracking. Existing settings and the R7 near-fog correction are retained. Update and fully restart FFXIV. Experimental preview; physical webcam and native game acceptance remain pending.",
     "RepoUrl": "https://github.com/Sidiousious/musical-guide",
     "Tags": [
       "Camera"
@@ -34,13 +34,13 @@
     "IconUrl": "https://yfplugins.kinkop.eu/musical-guide.png",
     "Punchline": "Enhanced camera distance control and first-person experience.",
     "LoadPriority": -1,
-    "AssemblyVersion": "1.8.0.9",
+    "AssemblyVersion": "1.8.0.10",
     "DalamudApiLevel": 15,
     "ApplicableVersion": "any",
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-r7-near-fog-fix-2026-10-20/MusicalGuideLocalCamera-1.8.0.9-preview.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-r7-near-fog-fix-2026-10-20/MusicalGuideLocalCamera-1.8.0.9-preview.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-r7-near-fog-fix-2026-10-20/MusicalGuideLocalCamera-1.8.0.9-preview.zip",
-    "LastUpdate": 1792466956,
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-r8-tracking-2026-10-20/MusicalGuideLocalCamera-1.8.0.10-preview.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-r8-tracking-2026-10-20/MusicalGuideLocalCamera-1.8.0.10-preview.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-r8-tracking-2026-10-20/MusicalGuideLocalCamera-1.8.0.10-preview.zip",
+    "LastUpdate": 1792471681,
     "CanUnloadAsync": false
   },
   {
@@ -70,8 +70,8 @@
     "Author": "NearFace contributors",
     "Name": "NearFace Local Controls (prototype)",
     "InternalName": "NearFaceDiagnostics",
-    "AssemblyVersion": "0.2.4.0",
-    "Description": "Local prototype. /nearface opens controls. Start live session explicitly starts the bundled webcam helper and local receiver; Stop or plugin unload stops the owned helper. Nothing opens the camera automatically. Fresh numeric coefficients go over IPv4 loopback to the matching C+ fork. Animation components start disabled and need visual calibration. Saved C+ profiles and other players are not modified or synchronized.",
+    "AssemblyVersion": "0.2.5.0",
+    "Description": "NearFace 0.2.5: one explicitly started webcam supplies local facial coefficients and head pose for Musical Guide R8. Fit checks, bounded filtering, fresh ordered input and explicit loss/reacquisition improve stability. /nearface opens controls; /mguide can start both webcam and camera tracking. Nothing opens the webcam automatically. Facial components remain opt-in and need sculpt calibration. Local numeric data only; no image recording or other-player synchronization.",
     "ApplicableVersion": "any",
     "Tags": [
       "local",
@@ -85,9 +85,9 @@
     "LoadPriority": 0,
     "Punchline": "Local face controls and read-only bone inventory for the matching C+ fork.",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-webcam-hotfix-2026-10-19/NearFaceDiagnostics-0.2.4.0.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-webcam-hotfix-2026-10-19/NearFaceDiagnostics-0.2.4.0.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-webcam-hotfix-2026-10-19/NearFaceDiagnostics-0.2.4.0.zip",
-    "LastUpdate": 1792405142
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-r8-tracking-2026-10-20/NearFaceDiagnostics-0.2.5.0.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-r8-tracking-2026-10-20/NearFaceDiagnostics-0.2.5.0.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-r8-tracking-2026-10-20/NearFaceDiagnostics-0.2.5.0.zip",
+    "LastUpdate": 1792471681
   }
 ]
