@@ -1,5 +1,22 @@
 [
   {
+    "Author": "NearVoice contributors; original by Ricimon",
+    "Name": "NearVoice",
+    "InternalName": "NearVoice",
+    "AssemblyVersion": "0.2.1.0",
+    "DalamudApiLevel": 15,
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/SmolShar/NearVoice-Downloads",
+    "Punchline": "Automatic proximity voice",
+    "Description": "Automatic world/map proximity voice. /yakin opens the panel. Requires original ProximityVoiceChat local service settings.",
+    "IsHide": false,
+    "IsTestingExclusive": false,
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/v0.2.1/latest.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/v0.2.1/latest.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/v0.2.1/latest.zip",
+    "LastUpdate": 1792297470
+  },
+  {
     "Author": "XeldarAlz; local Discord adaptation",
     "Name": "Aethr App (local Discord)",
     "InternalName": "AethrAppLocalDiscord",
