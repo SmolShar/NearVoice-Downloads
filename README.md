@@ -24,8 +24,8 @@ This consolidation changes the index, not the plugin binaries or saved settings.
 For an existing installation, keep its previous `phone-camera-face.json` entry
 enabled until the installed plugins' source has been migrated to `repo.json`.
 Dalamud 15.0.3.8 matches third-party updates to the installed source URL as well
-as the plugin identity. The legacy URL is an identical compatibility mirror of
-the canonical index; future index changes must keep both files byte-identical.
+as the plugin identity. The legacy URL mirrors the canonical index; future changes must keep the same
+manifest entries, versions and download links at both addresses.
 New installations need only `repo.json`. Do not reset configurations or remove
 unrelated custom repositories to consolidate these five plugins.
 
