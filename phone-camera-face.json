@@ -24,9 +24,9 @@
   },
   {
     "Author": "YF",
-    "Name": "Musical Guide (local camera R6)",
+    "Name": "Musical Guide (local camera R7)",
     "InternalName": "MusicalGuideLocalCamera",
-    "Description": "Local experimental camera R6; installer identity fix 1.8.0.8. Disable other Musical Guide copies before enabling this plugin. /mguide opens settings; the title contains automatic near r6. Enable Automatically restore hand-clipping reduction under First Person Settings > First Person Adjustments / Hand clipping. Uses separate settings; previous MusicalGuide settings are not imported. Not an official upstream release. Native game acceptance remains pending.",
+    "Description": "Local camera R7 1.8.0.9: correction for white fog when Reduce hand / object clipping is enabled. Updates the native camera near distance consistently and restores its captured baseline. Existing MusicalGuideLocalCamera settings are retained. /mguide title: near fog fix r7. Update and fully restart FFXIV before testing. Experimental local fork; game visual acceptance is pending.",
     "RepoUrl": "https://github.com/Sidiousious/musical-guide",
     "Tags": [
       "Camera"
@@ -34,13 +34,14 @@
     "IconUrl": "https://yfplugins.kinkop.eu/musical-guide.png",
     "Punchline": "Enhanced camera distance control and first-person experience.",
     "LoadPriority": -1,
-    "AssemblyVersion": "1.8.0.8",
+    "AssemblyVersion": "1.8.0.9",
     "DalamudApiLevel": 15,
     "ApplicableVersion": "any",
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-r6-installer-fix-2026-10-20/MusicalGuideLocalCamera-1.8.0.8-preview.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-r6-installer-fix-2026-10-20/MusicalGuideLocalCamera-1.8.0.8-preview.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-r6-installer-fix-2026-10-20/MusicalGuideLocalCamera-1.8.0.8-preview.zip",
-    "LastUpdate": 1792459989
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-r7-near-fog-fix-2026-10-20/MusicalGuideLocalCamera-1.8.0.9-preview.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-r7-near-fog-fix-2026-10-20/MusicalGuideLocalCamera-1.8.0.9-preview.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-r7-near-fog-fix-2026-10-20/MusicalGuideLocalCamera-1.8.0.9-preview.zip",
+    "LastUpdate": 1792466956,
+    "CanUnloadAsync": false
   },
   {
     "Author": "Risa and Contributors",
