@@ -3,7 +3,7 @@
     "Author": "XeldarAlz; local Discord adaptation",
     "Name": "Aethr App (local Discord)",
     "InternalName": "AethrAppLocalDiscord",
-    "AssemblyVersion": "1.3.2.2",
+    "AssemblyVersion": "1.3.2.3",
     "DalamudApiLevel": 15,
     "Punchline": "Your existing phone interface with your Discord friends.",
     "Description": "Private local edition based on Aetherphone. Uses official Discord authorization for contacts and text chat. Aethernet services and unchecked native media/browser playback are disabled.",
@@ -17,16 +17,16 @@
       "messages",
       "local"
     ],
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-webcam-hotfix-2026-10-19/AethrAppLocalDiscord-1.3.2.2.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-webcam-hotfix-2026-10-19/AethrAppLocalDiscord-1.3.2.2.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-webcam-hotfix-2026-10-19/AethrAppLocalDiscord-1.3.2.2.zip",
-    "LastUpdate": 1792405142
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-r3-r6-2026-10-19-preview/AethrAppLocalDiscord-1.3.2.3.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-r3-r6-2026-10-19-preview/AethrAppLocalDiscord-1.3.2.3.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-r3-r6-2026-10-19-preview/AethrAppLocalDiscord-1.3.2.3.zip",
+    "LastUpdate": 1792450016
   },
   {
     "Author": "YF",
-    "Name": "Musical Guide (local camera R5)",
+    "Name": "Musical Guide (local camera R6)",
     "InternalName": "MusicalGuide",
-    "Description": "Local experimental camera R5. /mguide opens settings. Ability-only reduced animated yaw, local mount visibility and session-only near override. Not an official upstream release.",
+    "Description": "Local experimental camera R6. /mguide opens settings. Adds saved opt-in automatic hand-clipping reduction for verified local first-person projections. Enable Automatically restore hand-clipping reduction in First Person Adjustments / Hand clipping. Not an official upstream release. Native game acceptance remains pending.",
     "RepoUrl": "https://github.com/Sidiousious/musical-guide",
     "Tags": [
       "Camera"
@@ -34,13 +34,13 @@
     "IconUrl": "https://yfplugins.kinkop.eu/musical-guide.png",
     "Punchline": "Enhanced camera distance control and first-person experience.",
     "LoadPriority": -1,
-    "AssemblyVersion": "1.8.0.6",
+    "AssemblyVersion": "1.8.0.7",
     "DalamudApiLevel": 15,
     "ApplicableVersion": "any",
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-face-2026-10-19-preview/MusicalGuide-1.8.0.6-preview.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-face-2026-10-19-preview/MusicalGuide-1.8.0.6-preview.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-face-2026-10-19-preview/MusicalGuide-1.8.0.6-preview.zip",
-    "LastUpdate": 1792399755
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-r3-r6-2026-10-19-preview/MusicalGuide-1.8.0.7-preview.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-r3-r6-2026-10-19-preview/MusicalGuide-1.8.0.7-preview.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-r3-r6-2026-10-19-preview/MusicalGuide-1.8.0.7-preview.zip",
+    "LastUpdate": 1792450016
   },
   {
     "Author": "Risa and Contributors",

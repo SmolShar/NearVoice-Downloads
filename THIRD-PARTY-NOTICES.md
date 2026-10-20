@@ -31,3 +31,12 @@ The bundled native `mrwebrtc.dll` is specialized to NearVoice's single `ordered=
 The Windows/.NET SDK, Dalamud and original service credentials are not distributed in this package. The source archive may retain the original signaling-server reference source; it is not run or installed by the NearVoice runtime package. No claim is made that supplementary current upstream license copies describe the exact complete build composition of an otherwise precompiled vendored native library; its supplied full MixedReality-WebRTC `NOTICE` is retained for that purpose.
 
 NearVoice's Turkish panel reads the existing Windows Segoe UI font through a plugin-owned managed font handle. The Segoe UI font file is not redistributed in either archive. The optional talking animation uses API types supplied by the user's Dalamud/FFXIVClientStructs SDK; those SDK binaries are not included.
+
+## Separate phone and camera preview — R3/R6
+
+The optional packages in `phone-camera-face.json` have their own upstream sources and notices:
+
+- **Aethr App (local Discord) R3 1.3.2.3** derives from [XeldarAlz/FFXIV-Aetherphone](https://github.com/XeldarAlz/FFXIV-Aetherphone). `AethrAppLocalDiscord-1.3.2.3.zip` retains the original AGPL-3.0-or-later `LICENSE.md`, `NOTICE`, `THIRD-PARTY-NOTICES.md`, trademark policy and component notices. Its modifications are identified in `LOCAL-EDITION.txt`. [Corresponding R3 source](https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-r3-r6-2026-10-19-preview/AethrAppLocalDiscord-1.3.2.3-source.zip) is provided separately.
+- **Musical Guide (local camera R6) 1.8.0.7** derives from [Sidiousious/musical-guide](https://github.com/Sidiousious/musical-guide). `MusicalGuide-1.8.0.7-preview.zip` includes `LICENSE.md`, `LICENSE-Brio-GPL3` and `LICENSE-FFXIVClientStructs.txt`, retained from the previous camera preview. [Corresponding R6 source](https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-r3-r6-2026-10-19-preview/MusicalGuide-1.8.0.7-source.zip) is provided separately.
+
+The phone archive's `DiscordBridge` directory retains `Discord-SDK-License-Notices.txt` alongside the unchanged native helper and Discord SDK library. Official Discord SDK headers and import libraries are obtained separately to rebuild that helper. The existing NearFace and Customize+ packages retain their previously published source and notices, linked in [the phone/camera/face instructions](PHONE-CAMERA-FACE.md).
