@@ -41,9 +41,9 @@
   },
   {
     "Author": "YF",
-    "Name": "Musical Guide (mount crash recovery R11)",
+    "Name": "Musical Guide (local camera R12)",
     "InternalName": "MusicalGuideLocalCamera",
-    "Description": "R11 recovery removes the R10 rider attachment-world query confirmed in the mount crash stack. Restores the previous R9 mounted path. Rider-head mounted positioning is withdrawn pending native verification. On-foot head tracking, near clipping, offsets and mount visibility retained. Fully restart FFXIV after updating.",
+    "Description": "R12: retires physical webcam camera steering; facial webcam stays in NearFace. Automatic hand-clipping preference is migrated once, with fresh native projection verification after map changes. Detects a loaded old MusicalGuide copy and retries strict binding when it is unloaded. Local head mask is available with matching Customize+ for every installation. Retains R11 mount crash recovery; rider-head mounted positioning remains withdrawn. Existing FOV/offsets retained. Restart after update.",
     "RepoUrl": "https://github.com/Sidiousious/musical-guide",
     "Tags": [
       "Camera"
@@ -51,23 +51,23 @@
     "IconUrl": "https://yfplugins.kinkop.eu/musical-guide.png",
     "Punchline": "Enhanced camera distance control and first-person experience.",
     "LoadPriority": -1,
-    "AssemblyVersion": "1.8.0.13",
+    "AssemblyVersion": "1.8.0.14",
     "DalamudApiLevel": 15,
     "ApplicableVersion": "any",
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-recovery-r11-2026-10-21/MusicalGuideLocalCamera-1.8.0.13-preview.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-recovery-r11-2026-10-21/MusicalGuideLocalCamera-1.8.0.13-preview.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-recovery-r11-2026-10-21/MusicalGuideLocalCamera-1.8.0.13-preview.zip",
-    "LastUpdate": 1792554393,
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-continuity-camera-r12-2026-10-21/MusicalGuideLocalCamera-1.8.0.14-preview.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-continuity-camera-r12-2026-10-21/MusicalGuideLocalCamera-1.8.0.14-preview.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-continuity-camera-r12-2026-10-21/MusicalGuideLocalCamera-1.8.0.14-preview.zip",
+    "LastUpdate": 1792559095,
     "CanUnloadAsync": false
   },
   {
     "Author": "Risa and Contributors",
     "Name": "Customize+ (local NearFace fork)",
     "Punchline": "Customize your character beyond FFXIV's limitations.",
-    "Description": "Local NearFace fork: profile-preserving facial overlays, measured eyelid opt-in and independent native Character-view mirror overlay. Cooperative local first-person head masking now supports a verified mounted rider eye. Not an official Aether Tools release. Visual sculpt acceptance required.",
+    "Description": "Customize+ with cooperative local NearFace layers: current facial frames, calibrated eyelids, lip expressions, optional approximate pupil/cheek offsets and independent native Character-preview ownership. Original C+ profiles remain intact. No other-player synchronization; visual sculpt acceptance pending.",
     "InternalName": "CustomizePlus",
     "ApplicableVersion": "any",
-    "AssemblyVersion": "2.2.1.7",
+    "AssemblyVersion": "2.2.1.8",
     "RepoUrl": "https://github.com/Aether-Tools/CustomizePlus",
     "Tags": [
       "Anamnesis",
@@ -78,17 +78,17 @@
     "ImageUrls": null,
     "IconUrl": "https://raw.githubusercontent.com/Aether-Tools/CustomizePlus/main/Data/icon.png",
     "DalamudApiLevel": 15,
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-mirror-r10-2026-10-21/CustomizePlus-2.2.1.7-preview.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-mirror-r10-2026-10-21/CustomizePlus-2.2.1.7-preview.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-mirror-r10-2026-10-21/CustomizePlus-2.2.1.7-preview.zip",
-    "LastUpdate": 1792551587
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-continuity-camera-r12-2026-10-21/CustomizePlus-2.2.1.8-preview.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-continuity-camera-r12-2026-10-21/CustomizePlus-2.2.1.8-preview.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-continuity-camera-r12-2026-10-21/CustomizePlus-2.2.1.8-preview.zip",
+    "LastUpdate": 1792559095
   },
   {
     "Author": "NearFace contributors",
-    "Name": "NearFace (face, mirror + head tracking)",
+    "Name": "NearFace (face + compact mirror)",
     "InternalName": "NearFaceDiagnostics",
-    "AssemblyVersion": "0.2.6.0",
-    "Description": "Explicit-start local webcam face/head tracking. /nearface mirror opens a native character-face view without moving the gameplay camera. 16 approximate channels include lip width/narrowing; response and component preferences are saved. Matching Customize+ 2.2.1.7 required. Tongue, cheek puff, nose and precise gaze are unavailable. No other-player synchronization. Native mirror/render acceptance pending.",
+    "AssemblyVersion": "0.2.7.0",
+    "Description": "Explicit-start local facial webcam. Facial continuity no longer depends on camera head-pose acquisition. /nearface mirror is a small movable/resizable character preview; right-click for framing controls. Optional approximate iris direction and smile-linked cheeks, with bounded previews. Matching Customize+ 2.2.1.8 required. Physical webcam camera steering is retired. Tongue and measured cheek puff are unavailable. No other-player face/look synchronization. Native visual acceptance is pending.",
     "ApplicableVersion": "any",
     "Tags": [
       "local",
@@ -102,9 +102,9 @@
     "LoadPriority": 0,
     "Punchline": "Local face controls and read-only bone inventory for the matching C+ fork.",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-mirror-r10-2026-10-21/NearFaceDiagnostics-0.2.6.0.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-mirror-r10-2026-10-21/NearFaceDiagnostics-0.2.6.0.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-mirror-r10-2026-10-21/NearFaceDiagnostics-0.2.6.0.zip",
-    "LastUpdate": 1792551587
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-continuity-camera-r12-2026-10-21/NearFaceDiagnostics-0.2.7.0.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-continuity-camera-r12-2026-10-21/NearFaceDiagnostics-0.2.7.0.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-continuity-camera-r12-2026-10-21/NearFaceDiagnostics-0.2.7.0.zip",
+    "LastUpdate": 1792559095
   }
 ]
