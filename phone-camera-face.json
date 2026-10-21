@@ -41,9 +41,9 @@
   },
   {
     "Author": "YF",
-    "Name": "Musical Guide (local camera R10)",
+    "Name": "Musical Guide (mount crash recovery R11)",
     "InternalName": "MusicalGuideLocalCamera",
-    "Description": "R10: mounted first-person follows the rider's animated head through the native attachment world transform, with coordinated local head masking. Existing near-clipping, on-foot head tracking, offsets/FOV and seat profiles retained. Unknown/unready attachment data keeps the original camera. Actual mount visual acceptance pending. Use /mguide.",
+    "Description": "R11 recovery removes the R10 rider attachment-world query confirmed in the mount crash stack. Restores the previous R9 mounted path. Rider-head mounted positioning is withdrawn pending native verification. On-foot head tracking, near clipping, offsets and mount visibility retained. Fully restart FFXIV after updating.",
     "RepoUrl": "https://github.com/Sidiousious/musical-guide",
     "Tags": [
       "Camera"
@@ -51,13 +51,13 @@
     "IconUrl": "https://yfplugins.kinkop.eu/musical-guide.png",
     "Punchline": "Enhanced camera distance control and first-person experience.",
     "LoadPriority": -1,
-    "AssemblyVersion": "1.8.0.12",
+    "AssemblyVersion": "1.8.0.13",
     "DalamudApiLevel": 15,
     "ApplicableVersion": "any",
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-mirror-r10-2026-10-21/MusicalGuideLocalCamera-1.8.0.12-preview.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-mirror-r10-2026-10-21/MusicalGuideLocalCamera-1.8.0.12-preview.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-mirror-r10-2026-10-21/MusicalGuideLocalCamera-1.8.0.12-preview.zip",
-    "LastUpdate": 1792551587,
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-recovery-r11-2026-10-21/MusicalGuideLocalCamera-1.8.0.13-preview.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-recovery-r11-2026-10-21/MusicalGuideLocalCamera-1.8.0.13-preview.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-recovery-r11-2026-10-21/MusicalGuideLocalCamera-1.8.0.13-preview.zip",
+    "LastUpdate": 1792554393,
     "CanUnloadAsync": false
   },
   {
