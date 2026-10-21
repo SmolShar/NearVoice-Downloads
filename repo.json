@@ -41,9 +41,9 @@
   },
   {
     "Author": "YF",
-    "Name": "Musical Guide (local camera R12)",
+    "Name": "Musical Guide (local camera R13)",
     "InternalName": "MusicalGuideLocalCamera",
-    "Description": "R12: retires physical webcam camera steering; facial webcam stays in NearFace. Automatic hand-clipping preference is migrated once, with fresh native projection verification after map changes. Detects a loaded old MusicalGuide copy and retries strict binding when it is unloaded. Local head mask is available with matching Customize+ for every installation. Retains R11 mount crash recovery; rider-head mounted positioning remains withdrawn. Existing FOV/offsets retained. Restart after update.",
+    "Description": "Optional mouse body + webcam scene free look, guarded native scene-angle hooks and bounded local head rendering through matching C+. Normal mouse mode remains available. Retains R12 projection verification, automatic hand preference and R11 mount crash recovery. New head look is on-foot only and requires native validation.",
     "RepoUrl": "https://github.com/Sidiousious/musical-guide",
     "Tags": [
       "Camera"
@@ -51,26 +51,26 @@
     "IconUrl": "https://yfplugins.kinkop.eu/musical-guide.png",
     "Punchline": "Enhanced camera distance control and first-person experience.",
     "LoadPriority": -1,
-    "AssemblyVersion": "1.8.0.14",
+    "AssemblyVersion": "1.8.0.15",
     "DalamudApiLevel": 15,
     "ApplicableVersion": "any",
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-continuity-camera-r12-2026-10-21/MusicalGuideLocalCamera-1.8.0.14-preview.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-continuity-camera-r12-2026-10-21/MusicalGuideLocalCamera-1.8.0.14-preview.zip",
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/detailed-face-mirror-camera-r13-testing-2026-10-21/MusicalGuideLocalCamera-1.8.0.15-candidate.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/detailed-face-mirror-camera-r13-testing-2026-10-21/MusicalGuideLocalCamera-1.8.0.15-candidate.zip",
     "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/detailed-face-mirror-camera-r13-testing-2026-10-21/MusicalGuideLocalCamera-1.8.0.15-candidate.zip",
-    "LastUpdate": 1792559095,
+    "LastUpdate": 1792599999,
     "CanUnloadAsync": false,
     "TestingAssemblyVersion": "1.8.0.15",
     "TestingDalamudApiLevel": 15,
-    "Changelog": "TESTING PREVIEW: 0.2.8 face / 2.2.1.9 Customize+ / camera R13. Live webcam, native mirror/sculpt and scene hooks still need in-game testing. Update the three TESTING packages together and fully restart FFXIV. Stable channel remains unchanged. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/detailed-face-mirror-camera-r13-testing-2026-10-21"
+    "Changelog": "Normal update: detailed face 0.2.8, Customize+ 2.2.1.9 and camera R13. Update all three and fully restart FFXIV. Live webcam, native mirror/sculpt and scene hooks still await in-game validation. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/detailed-face-mirror-camera-r13-testing-2026-10-21"
   },
   {
     "Author": "Risa and Contributors",
     "Name": "Customize+ (local NearFace fork)",
     "Punchline": "Customize your character beyond FFXIV's limitations.",
-    "Description": "Customize+ with cooperative local NearFace layers: current facial frames, calibrated eyelids, lip expressions, optional approximate pupil/cheek offsets and independent native Character-preview ownership. Original C+ profiles remain intact. No other-player synchronization; visual sculpt acceptance pending.",
+    "Description": "Cooperative local detailed NearFace retargeting, calibrated eyelids, bounded pupil/cheek/nose/lip detail and rendered head look. Independent compact native Character preview ownership. C+ profiles remain active; no peer pose synchronization. New sculpt/look behavior requires native validation.",
     "InternalName": "CustomizePlus",
     "ApplicableVersion": "any",
-    "AssemblyVersion": "2.2.1.8",
+    "AssemblyVersion": "2.2.1.9",
     "RepoUrl": "https://github.com/Aether-Tools/CustomizePlus",
     "Tags": [
       "Anamnesis",
@@ -81,20 +81,20 @@
     "ImageUrls": null,
     "IconUrl": "https://raw.githubusercontent.com/Aether-Tools/CustomizePlus/main/Data/icon.png",
     "DalamudApiLevel": 15,
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-continuity-camera-r12-2026-10-21/CustomizePlus-2.2.1.8-preview.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-continuity-camera-r12-2026-10-21/CustomizePlus-2.2.1.8-preview.zip",
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/detailed-face-mirror-camera-r13-testing-2026-10-21/CustomizePlus-2.2.1.9-candidate.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/detailed-face-mirror-camera-r13-testing-2026-10-21/CustomizePlus-2.2.1.9-candidate.zip",
     "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/detailed-face-mirror-camera-r13-testing-2026-10-21/CustomizePlus-2.2.1.9-candidate.zip",
-    "LastUpdate": 1792559095,
+    "LastUpdate": 1792599999,
     "TestingAssemblyVersion": "2.2.1.9",
     "TestingDalamudApiLevel": 15,
-    "Changelog": "TESTING PREVIEW: 0.2.8 face / 2.2.1.9 Customize+ / camera R13. Live webcam, native mirror/sculpt and scene hooks still need in-game testing. Update the three TESTING packages together and fully restart FFXIV. Stable channel remains unchanged. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/detailed-face-mirror-camera-r13-testing-2026-10-21"
+    "Changelog": "Normal update: detailed face 0.2.8, Customize+ 2.2.1.9 and camera R13. Update all three and fully restart FFXIV. Live webcam, native mirror/sculpt and scene hooks still await in-game validation. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/detailed-face-mirror-camera-r13-testing-2026-10-21"
   },
   {
     "Author": "NearFace contributors",
-    "Name": "NearFace (face + compact mirror)",
+    "Name": "NearFace (detailed face + small mirror)",
     "InternalName": "NearFaceDiagnostics",
-    "AssemblyVersion": "0.2.7.0",
-    "Description": "Explicit-start local facial webcam. Facial continuity no longer depends on camera head-pose acquisition. /nearface mirror is a small movable/resizable character preview; right-click for framing controls. Optional approximate iris direction and smile-linked cheeks, with bounded previews. Matching Customize+ 2.2.1.8 required. Physical webcam camera steering is retired. Tongue and measured cheek puff are unavailable. No other-player face/look synchronization. Native visual acceptance is pending.",
+    "AssemblyVersion": "0.2.8.0",
+    "Description": "Explicit-start local MediaPipe facial input, compact resizable character mirror with Start/Stop/Neutral controls and saved framing. Optional pupil, cheek puff/squint, nose and lip detail retargeting through matching Customize+ 2.2.1.9. Numeric head input supports optional R13 scene free look. No tongue tracking, recording, peer synchronization or automatic camera start. New native behavior requires game validation.",
     "ApplicableVersion": "any",
     "Tags": [
       "local",
@@ -108,12 +108,12 @@
     "LoadPriority": 0,
     "Punchline": "Local face controls and read-only bone inventory for the matching C+ fork.",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-continuity-camera-r12-2026-10-21/NearFaceDiagnostics-0.2.7.0.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-continuity-camera-r12-2026-10-21/NearFaceDiagnostics-0.2.7.0.zip",
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/detailed-face-mirror-camera-r13-testing-2026-10-21/NearFaceDiagnostics-0.2.8.0-candidate.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/detailed-face-mirror-camera-r13-testing-2026-10-21/NearFaceDiagnostics-0.2.8.0-candidate.zip",
     "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/detailed-face-mirror-camera-r13-testing-2026-10-21/NearFaceDiagnostics-0.2.8.0-candidate.zip",
-    "LastUpdate": 1792559095,
+    "LastUpdate": 1792599999,
     "TestingAssemblyVersion": "0.2.8.0",
     "TestingDalamudApiLevel": 15,
-    "Changelog": "TESTING PREVIEW: 0.2.8 face / 2.2.1.9 Customize+ / camera R13. Live webcam, native mirror/sculpt and scene hooks still need in-game testing. Update the three TESTING packages together and fully restart FFXIV. Stable channel remains unchanged. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/detailed-face-mirror-camera-r13-testing-2026-10-21"
+    "Changelog": "Normal update: detailed face 0.2.8, Customize+ 2.2.1.9 and camera R13. Update all three and fully restart FFXIV. Live webcam, native mirror/sculpt and scene hooks still await in-game validation. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/detailed-face-mirror-camera-r13-testing-2026-10-21"
   }
 ]
