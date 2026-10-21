@@ -41,9 +41,9 @@
   },
   {
     "Author": "YF",
-    "Name": "Musical Guide (local camera R8)",
+    "Name": "Musical Guide (local camera R9)",
     "InternalName": "MusicalGuideLocalCamera",
-    "Description": "Local camera R8: steady first-person eye, per-mount seat offsets and optional physical head tracking. NearFace 0.2.5 provides one webcam for facial expressions and head pose; optional OpenTrack loopback input. Use /mguide; turn MouseLock off for head tracking. Existing settings and the R7 near-fog correction are retained. Update and fully restart FFXIV. Experimental preview; physical webcam and native game acceptance remain pending.",
+    "Description": "R9: physical head tracking respects animated head position; exact support for the 2026-10-21 game near-clipping binding; local mount/rider draw graph. Existing settings retained. Use /mguide, update then fully restart FFXIV. Live visual acceptance pending.",
     "RepoUrl": "https://github.com/Sidiousious/musical-guide",
     "Tags": [
       "Camera"
@@ -51,13 +51,13 @@
     "IconUrl": "https://yfplugins.kinkop.eu/musical-guide.png",
     "Punchline": "Enhanced camera distance control and first-person experience.",
     "LoadPriority": -1,
-    "AssemblyVersion": "1.8.0.10",
+    "AssemblyVersion": "1.8.0.11",
     "DalamudApiLevel": 15,
     "ApplicableVersion": "any",
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-r8-tracking-2026-10-20/MusicalGuideLocalCamera-1.8.0.10-preview.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-r8-tracking-2026-10-20/MusicalGuideLocalCamera-1.8.0.10-preview.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-r8-tracking-2026-10-20/MusicalGuideLocalCamera-1.8.0.10-preview.zip",
-    "LastUpdate": 1792471681,
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-r9-2026-10-21/MusicalGuideLocalCamera-1.8.0.11-preview.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-r9-2026-10-21/MusicalGuideLocalCamera-1.8.0.11-preview.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-r9-2026-10-21/MusicalGuideLocalCamera-1.8.0.11-preview.zip",
+    "LastUpdate": 1792546069,
     "CanUnloadAsync": false
   },
   {
