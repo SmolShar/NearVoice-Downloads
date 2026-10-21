@@ -56,9 +56,12 @@
     "ApplicableVersion": "any",
     "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-continuity-camera-r12-2026-10-21/MusicalGuideLocalCamera-1.8.0.14-preview.zip",
     "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-continuity-camera-r12-2026-10-21/MusicalGuideLocalCamera-1.8.0.14-preview.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-continuity-camera-r12-2026-10-21/MusicalGuideLocalCamera-1.8.0.14-preview.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/detailed-face-mirror-camera-r13-testing-2026-10-21/MusicalGuideLocalCamera-1.8.0.15-candidate.zip",
     "LastUpdate": 1792559095,
-    "CanUnloadAsync": false
+    "CanUnloadAsync": false,
+    "TestingAssemblyVersion": "1.8.0.15",
+    "TestingDalamudApiLevel": 15,
+    "Changelog": "TESTING PREVIEW: 0.2.8 face / 2.2.1.9 Customize+ / camera R13. Live webcam, native mirror/sculpt and scene hooks still need in-game testing. Update the three TESTING packages together and fully restart FFXIV. Stable channel remains unchanged. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/detailed-face-mirror-camera-r13-testing-2026-10-21"
   },
   {
     "Author": "Risa and Contributors",
@@ -80,8 +83,11 @@
     "DalamudApiLevel": 15,
     "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-continuity-camera-r12-2026-10-21/CustomizePlus-2.2.1.8-preview.zip",
     "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-continuity-camera-r12-2026-10-21/CustomizePlus-2.2.1.8-preview.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-continuity-camera-r12-2026-10-21/CustomizePlus-2.2.1.8-preview.zip",
-    "LastUpdate": 1792559095
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/detailed-face-mirror-camera-r13-testing-2026-10-21/CustomizePlus-2.2.1.9-candidate.zip",
+    "LastUpdate": 1792559095,
+    "TestingAssemblyVersion": "2.2.1.9",
+    "TestingDalamudApiLevel": 15,
+    "Changelog": "TESTING PREVIEW: 0.2.8 face / 2.2.1.9 Customize+ / camera R13. Live webcam, native mirror/sculpt and scene hooks still need in-game testing. Update the three TESTING packages together and fully restart FFXIV. Stable channel remains unchanged. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/detailed-face-mirror-camera-r13-testing-2026-10-21"
   },
   {
     "Author": "NearFace contributors",
@@ -104,7 +110,10 @@
     "AcceptsFeedback": true,
     "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-continuity-camera-r12-2026-10-21/NearFaceDiagnostics-0.2.7.0.zip",
     "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-continuity-camera-r12-2026-10-21/NearFaceDiagnostics-0.2.7.0.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-continuity-camera-r12-2026-10-21/NearFaceDiagnostics-0.2.7.0.zip",
-    "LastUpdate": 1792559095
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/detailed-face-mirror-camera-r13-testing-2026-10-21/NearFaceDiagnostics-0.2.8.0-candidate.zip",
+    "LastUpdate": 1792559095,
+    "TestingAssemblyVersion": "0.2.8.0",
+    "TestingDalamudApiLevel": 15,
+    "Changelog": "TESTING PREVIEW: 0.2.8 face / 2.2.1.9 Customize+ / camera R13. Live webcam, native mirror/sculpt and scene hooks still need in-game testing. Update the three TESTING packages together and fully restart FFXIV. Stable channel remains unchanged. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/detailed-face-mirror-camera-r13-testing-2026-10-21"
   }
 ]
