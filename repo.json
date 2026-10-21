@@ -41,9 +41,9 @@
   },
   {
     "Author": "YF",
-    "Name": "Musical Guide (local camera R9)",
+    "Name": "Musical Guide (local camera R10)",
     "InternalName": "MusicalGuideLocalCamera",
-    "Description": "R9: physical head tracking respects animated head position; exact support for the 2026-10-21 game near-clipping binding; local mount/rider draw graph. Existing settings retained. Use /mguide, update then fully restart FFXIV. Live visual acceptance pending.",
+    "Description": "R10: mounted first-person follows the rider's animated head through the native attachment world transform, with coordinated local head masking. Existing near-clipping, on-foot head tracking, offsets/FOV and seat profiles retained. Unknown/unready attachment data keeps the original camera. Actual mount visual acceptance pending. Use /mguide.",
     "RepoUrl": "https://github.com/Sidiousious/musical-guide",
     "Tags": [
       "Camera"
@@ -51,23 +51,23 @@
     "IconUrl": "https://yfplugins.kinkop.eu/musical-guide.png",
     "Punchline": "Enhanced camera distance control and first-person experience.",
     "LoadPriority": -1,
-    "AssemblyVersion": "1.8.0.11",
+    "AssemblyVersion": "1.8.0.12",
     "DalamudApiLevel": 15,
     "ApplicableVersion": "any",
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-r9-2026-10-21/MusicalGuideLocalCamera-1.8.0.11-preview.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-r9-2026-10-21/MusicalGuideLocalCamera-1.8.0.11-preview.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-r9-2026-10-21/MusicalGuideLocalCamera-1.8.0.11-preview.zip",
-    "LastUpdate": 1792546069,
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-mirror-r10-2026-10-21/MusicalGuideLocalCamera-1.8.0.12-preview.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-mirror-r10-2026-10-21/MusicalGuideLocalCamera-1.8.0.12-preview.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-mirror-r10-2026-10-21/MusicalGuideLocalCamera-1.8.0.12-preview.zip",
+    "LastUpdate": 1792551587,
     "CanUnloadAsync": false
   },
   {
     "Author": "Risa and Contributors",
     "Name": "Customize+ (local NearFace fork)",
     "Punchline": "Customize your character beyond FFXIV's limitations.",
-    "Description": "Local experimental fork of Customize+ 2.2.1.3. Original profiles remain active; optional local face/head layers compose inside the existing render boundary. Not an official Aether Tools release. Native visual calibration is required.",
+    "Description": "Local NearFace fork: profile-preserving facial overlays, measured eyelid opt-in and independent native Character-view mirror overlay. Cooperative local first-person head masking now supports a verified mounted rider eye. Not an official Aether Tools release. Visual sculpt acceptance required.",
     "InternalName": "CustomizePlus",
     "ApplicableVersion": "any",
-    "AssemblyVersion": "2.2.1.6",
+    "AssemblyVersion": "2.2.1.7",
     "RepoUrl": "https://github.com/Aether-Tools/CustomizePlus",
     "Tags": [
       "Anamnesis",
@@ -78,17 +78,17 @@
     "ImageUrls": null,
     "IconUrl": "https://raw.githubusercontent.com/Aether-Tools/CustomizePlus/main/Data/icon.png",
     "DalamudApiLevel": 15,
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-face-2026-10-19-preview/CustomizePlus-2.2.1.6-preview.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-face-2026-10-19-preview/CustomizePlus-2.2.1.6-preview.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/phone-camera-face-2026-10-19-preview/CustomizePlus-2.2.1.6-preview.zip",
-    "LastUpdate": 1792399755
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-mirror-r10-2026-10-21/CustomizePlus-2.2.1.7-preview.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-mirror-r10-2026-10-21/CustomizePlus-2.2.1.7-preview.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-mirror-r10-2026-10-21/CustomizePlus-2.2.1.7-preview.zip",
+    "LastUpdate": 1792551587
   },
   {
     "Author": "NearFace contributors",
-    "Name": "NearFace Local Controls (prototype)",
+    "Name": "NearFace (face, mirror + head tracking)",
     "InternalName": "NearFaceDiagnostics",
-    "AssemblyVersion": "0.2.5.0",
-    "Description": "NearFace 0.2.5: one explicitly started webcam supplies local facial coefficients and head pose for Musical Guide R8. Fit checks, bounded filtering, fresh ordered input and explicit loss/reacquisition improve stability. /nearface opens controls; /mguide can start both webcam and camera tracking. Nothing opens the webcam automatically. Facial components remain opt-in and need sculpt calibration. Local numeric data only; no image recording or other-player synchronization.",
+    "AssemblyVersion": "0.2.6.0",
+    "Description": "Explicit-start local webcam face/head tracking. /nearface mirror opens a native character-face view without moving the gameplay camera. 16 approximate channels include lip width/narrowing; response and component preferences are saved. Matching Customize+ 2.2.1.7 required. Tongue, cheek puff, nose and precise gaze are unavailable. No other-player synchronization. Native mirror/render acceptance pending.",
     "ApplicableVersion": "any",
     "Tags": [
       "local",
@@ -102,9 +102,9 @@
     "LoadPriority": 0,
     "Punchline": "Local face controls and read-only bone inventory for the matching C+ fork.",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-r8-tracking-2026-10-20/NearFaceDiagnostics-0.2.5.0.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-r8-tracking-2026-10-20/NearFaceDiagnostics-0.2.5.0.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-r8-tracking-2026-10-20/NearFaceDiagnostics-0.2.5.0.zip",
-    "LastUpdate": 1792471681
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-mirror-r10-2026-10-21/NearFaceDiagnostics-0.2.6.0.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-mirror-r10-2026-10-21/NearFaceDiagnostics-0.2.6.0.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/camera-face-mirror-r10-2026-10-21/NearFaceDiagnostics-0.2.6.0.zip",
+    "LastUpdate": 1792551587
   }
 ]
