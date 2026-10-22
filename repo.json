@@ -93,8 +93,8 @@
     "Author": "NearFace contributors",
     "Name": "NearFace (detailed face + small mirror)",
     "InternalName": "NearFaceDiagnostics",
-    "AssemblyVersion": "0.2.10.0",
-    "Description": "Local facial tracking with adaptive detail filtering, signed neutral gaze calibration and a compact character mirror. Matching Customize+2.2.1.10 improves separate inner/outer brow response, closed-lip jaw separation, blink-aware pupil direction and bounded combined cheek motion. Existing camera start and channel choices remain explicit. No response presets, new shortcuts, tongue tracking, pupil-size tracking or peer synchronization. Physical webcam and native sculpt appearance require validation.",
+    "AssemblyVersion": "0.2.11.0",
+    "Description": "Explicit-start local face tracking and compact character mirror. Brief face-loss recovery fades in from fresh measurements without reusing pre-gap filter history. Explicit neutral calibration waits for stable complete measurements, removes stable non-blink model bias and clears old filter history on completion. Existing blink cap, absence release, native C+ retargeting and saved settings remain. Compatible with unchanged Customize+2.2.1.11 and cameraR13. No new profiles, shortcuts, model weights, recording, tongue/pupil-size tracking or peer synchronization. Physical webcam and native visual behavior remain unverified.",
     "ApplicableVersion": "any",
     "Tags": [
       "local",
@@ -108,12 +108,12 @@
     "LoadPriority": 0,
     "Punchline": "Local face controls and read-only bone inventory for the matching C+ fork.",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/nearface-0.2.10-tracking-detail-2026-10-22/NearFaceDiagnostics-0.2.10.0.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/nearface-0.2.10-tracking-detail-2026-10-22/NearFaceDiagnostics-0.2.10.0.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/nearface-0.2.10-tracking-detail-2026-10-22/NearFaceDiagnostics-0.2.10.0.zip",
-    "LastUpdate": 1792652245,
-    "TestingAssemblyVersion": "0.2.10.0",
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/nearface-0.2.11-recovery-neutral-2026-10-22/NearFaceDiagnostics-0.2.11.0.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/nearface-0.2.11-recovery-neutral-2026-10-22/NearFaceDiagnostics-0.2.11.0.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/nearface-0.2.11-recovery-neutral-2026-10-22/NearFaceDiagnostics-0.2.11.0.zip",
+    "LastUpdate": 1792671666,
+    "TestingAssemblyVersion": "0.2.11.0",
     "TestingDalamudApiLevel": 15,
-    "Changelog": "Normal tracking update: adaptive detail filtering, signed gaze neutral, independent inner/outer brows, closed-lip jaw separation, blink-aware pupils and bounded combined cheeks. Update both NearFace0.2.10 and Customize+2.2.1.10. No profiles/new shortcuts. Native visual validation pending. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/nearface-0.2.10-tracking-detail-2026-10-22"
+    "Changelog": "Normal update: fresh soft recovery after brief face loss; stable explicit neutral calibration removes resting bias and old filter history. Existing C+2.2.1.11 jaw/dimple and cameraR13 unchanged. No new profiles/shortcuts. Physical webcam/native appearance unverified. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/nearface-0.2.11-recovery-neutral-2026-10-22"
   }
 ]
