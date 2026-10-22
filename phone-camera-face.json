@@ -41,9 +41,9 @@
   },
   {
     "Author": "YF",
-    "Name": "Musical Guide (local camera R13)",
+    "Name": "Musical Guide (local camera R14)",
     "InternalName": "MusicalGuideLocalCamera",
-    "Description": "Optional mouse body + webcam scene free look, guarded native scene-angle hooks and bounded local head rendering through matching C+. Normal mouse mode remains available. Retains R12 projection verification, automatic hand preference and R11 mount crash recovery. New head look is on-foot only and requires native validation.",
+    "Description": "Webcam look start also selects NearFace and enables head look after an accepted session request. Failed start preserves the prior mode. Existing native guards, head tracking, mounts and hand clipping remain unchanged.",
     "RepoUrl": "https://github.com/Sidiousious/musical-guide",
     "Tags": [
       "Camera"
@@ -51,26 +51,26 @@
     "IconUrl": "https://yfplugins.kinkop.eu/musical-guide.png",
     "Punchline": "Enhanced camera distance control and first-person experience.",
     "LoadPriority": -1,
-    "AssemblyVersion": "1.8.0.15",
+    "AssemblyVersion": "1.8.0.16",
     "DalamudApiLevel": 15,
     "ApplicableVersion": "any",
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/detailed-face-mirror-camera-r13-testing-2026-10-21/MusicalGuideLocalCamera-1.8.0.15-candidate.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/detailed-face-mirror-camera-r13-testing-2026-10-21/MusicalGuideLocalCamera-1.8.0.15-candidate.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/detailed-face-mirror-camera-r13-testing-2026-10-21/MusicalGuideLocalCamera-1.8.0.15-candidate.zip",
-    "LastUpdate": 1792600000,
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-visibility-camera-r14-2026-10-22/MusicalGuideLocalCamera-1.8.0.16.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-visibility-camera-r14-2026-10-22/MusicalGuideLocalCamera-1.8.0.16.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-visibility-camera-r14-2026-10-22/MusicalGuideLocalCamera-1.8.0.16.zip",
+    "LastUpdate": 1792680301,
     "CanUnloadAsync": false,
-    "TestingAssemblyVersion": "1.8.0.15",
+    "TestingAssemblyVersion": "1.8.0.16",
     "TestingDalamudApiLevel": 15,
-    "Changelog": "Normal update: detailed face 0.2.8, Customize+ 2.2.1.9 and camera R13. Update all three and fully restart FFXIV. Live webcam, native mirror/sculpt and scene hooks still await in-game validation. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/detailed-face-mirror-camera-r13-testing-2026-10-21"
+    "Changelog": "Normal update: optional10-60FPS with measured processing rate; stronger bounded brows/cheeks/nose; calibrated blink+squint response; explicit webcam look start. No new shortcuts/profiles. Native appearance and physical-camera performance pending. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/face-visibility-camera-r14-2026-10-22"
   },
   {
     "Author": "Risa and Contributors",
     "Name": "Customize+ (local NearFace fork)",
     "Punchline": "Customize your character beyond FFXIV's limitations.",
-    "Description": "Cooperative local NearFace retargeting with bounded lateral jaw motion and independent backward mouth-corner dimple expression. Existing Live mouth enables jaw tracking; lip detail enables corners, and cheek detail additionally enables a small matching cheek inset. Preserves previous detailed face improvements, saved C+ profiles, native hooks, ownership, eye calibration and head masking. Compatible with unchanged NearFace0.2.10. Native sculpt appearance remains unverified; no peer synchronization or new shortcuts.",
+    "Description": "More visible bounded eyebrow, cheek puff and nose expressions; calibrated blink now includes matching squint/wide response. Existing eye opt-in, jaw/lip behavior and ownership remain. Native sculpt appearance pending.",
     "InternalName": "CustomizePlus",
     "ApplicableVersion": "any",
-    "AssemblyVersion": "2.2.1.11",
+    "AssemblyVersion": "2.2.1.12",
     "RepoUrl": "https://github.com/Aether-Tools/CustomizePlus",
     "Tags": [
       "Anamnesis",
@@ -81,20 +81,20 @@
     "ImageUrls": null,
     "IconUrl": "https://raw.githubusercontent.com/Aether-Tools/CustomizePlus/main/Data/icon.png",
     "DalamudApiLevel": 15,
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/customizeplus-2.2.1.11-jaw-dimple-2026-10-22/CustomizePlus-2.2.1.11.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/customizeplus-2.2.1.11-jaw-dimple-2026-10-22/CustomizePlus-2.2.1.11.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/customizeplus-2.2.1.11-jaw-dimple-2026-10-22/CustomizePlus-2.2.1.11.zip",
-    "LastUpdate": 1792657520,
-    "TestingAssemblyVersion": "2.2.1.11",
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-visibility-camera-r14-2026-10-22/CustomizePlus-2.2.1.12.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-visibility-camera-r14-2026-10-22/CustomizePlus-2.2.1.12.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-visibility-camera-r14-2026-10-22/CustomizePlus-2.2.1.12.zip",
+    "LastUpdate": 1792680301,
+    "TestingAssemblyVersion": "2.2.1.12",
     "TestingDalamudApiLevel": 15,
-    "Changelog": "Normal update: lateral jaw tracking and independent left/right dimple expression through existing mouth/lip/cheek controls. NearFace0.2.10 is unchanged. No new profiles/shortcuts. Native visual validation pending. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/customizeplus-2.2.1.11-jaw-dimple-2026-10-22"
+    "Changelog": "Normal update: optional10-60FPS with measured processing rate; stronger bounded brows/cheeks/nose; calibrated blink+squint response; explicit webcam look start. No new shortcuts/profiles. Native appearance and physical-camera performance pending. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/face-visibility-camera-r14-2026-10-22"
   },
   {
     "Author": "NearFace contributors",
     "Name": "NearFace (detailed face + small mirror)",
     "InternalName": "NearFaceDiagnostics",
-    "AssemblyVersion": "0.2.11.0",
-    "Description": "Explicit-start local face tracking and compact character mirror. Brief face-loss recovery fades in from fresh measurements without reusing pre-gap filter history. Explicit neutral calibration waits for stable complete measurements, removes stable non-blink model bias and clears old filter history on completion. Existing blink cap, absence release, native C+ retargeting and saved settings remain. Compatible with unchanged Customize+2.2.1.11 and cameraR13. No new profiles, shortcuts, model weights, recording, tongue/pupil-size tracking or peer synchronization. Physical webcam and native visual behavior remain unverified.",
+    "AssemblyVersion": "0.2.12.0",
+    "Description": "Local face and head tracking with optional 10-60 FPS capture target. Reports measured processing throughput separately from driver frame-rate metadata. Existing explicit camera start, neutral calibration and compact character mirror. Actual 60 FPS depends on camera and CPU.",
     "ApplicableVersion": "any",
     "Tags": [
       "local",
@@ -108,12 +108,12 @@
     "LoadPriority": 0,
     "Punchline": "Local face controls and read-only bone inventory for the matching C+ fork.",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/nearface-0.2.11-recovery-neutral-2026-10-22/NearFaceDiagnostics-0.2.11.0.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/nearface-0.2.11-recovery-neutral-2026-10-22/NearFaceDiagnostics-0.2.11.0.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/nearface-0.2.11-recovery-neutral-2026-10-22/NearFaceDiagnostics-0.2.11.0.zip",
-    "LastUpdate": 1792671667,
-    "TestingAssemblyVersion": "0.2.11.0",
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-visibility-camera-r14-2026-10-22/NearFaceDiagnostics-0.2.12.0.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-visibility-camera-r14-2026-10-22/NearFaceDiagnostics-0.2.12.0.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-visibility-camera-r14-2026-10-22/NearFaceDiagnostics-0.2.12.0.zip",
+    "LastUpdate": 1792680301,
+    "TestingAssemblyVersion": "0.2.12.0",
     "TestingDalamudApiLevel": 15,
-    "Changelog": "Normal update: fresh soft recovery after brief face loss; stable explicit neutral calibration removes resting bias and old filter history. Existing C+2.2.1.11 jaw/dimple and cameraR13 unchanged. No new profiles/shortcuts. Physical webcam/native appearance unverified. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/nearface-0.2.11-recovery-neutral-2026-10-22"
+    "Changelog": "Normal update: optional10-60FPS with measured processing rate; stronger bounded brows/cheeks/nose; calibrated blink+squint response; explicit webcam look start. No new shortcuts/profiles. Native appearance and physical-camera performance pending. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/face-visibility-camera-r14-2026-10-22"
   }
 ]
