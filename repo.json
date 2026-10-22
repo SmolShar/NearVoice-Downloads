@@ -67,10 +67,10 @@
     "Author": "Risa and Contributors",
     "Name": "Customize+ (local NearFace fork)",
     "Punchline": "Customize your character beyond FFXIV's limitations.",
-    "Description": "Cooperative local detailed NearFace retargeting, calibrated eyelids, bounded pupil/cheek/nose/lip detail and rendered head look. Independent compact native Character preview ownership. C+ profiles remain active; no peer pose synchronization. New sculpt/look behavior requires native validation.",
+    "Description": "Local NearFace detail retargeting: independent inner/outer brows, mouthClose-aware lips with separate jaw motion, bounded blink-aware pupil direction and combined puff/smile/squint cheeks. Existing ownership, native hooks, calibration opt-in, head masking and saved C+ profiles are preserved. Matching NearFace0.2.10 recommended. Native sculpt appearance remains unverified; no peer pose synchronization.",
     "InternalName": "CustomizePlus",
     "ApplicableVersion": "any",
-    "AssemblyVersion": "2.2.1.9",
+    "AssemblyVersion": "2.2.1.10",
     "RepoUrl": "https://github.com/Aether-Tools/CustomizePlus",
     "Tags": [
       "Anamnesis",
@@ -81,20 +81,20 @@
     "ImageUrls": null,
     "IconUrl": "https://raw.githubusercontent.com/Aether-Tools/CustomizePlus/main/Data/icon.png",
     "DalamudApiLevel": 15,
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/detailed-face-mirror-camera-r13-testing-2026-10-21/CustomizePlus-2.2.1.9-candidate.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/detailed-face-mirror-camera-r13-testing-2026-10-21/CustomizePlus-2.2.1.9-candidate.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/detailed-face-mirror-camera-r13-testing-2026-10-21/CustomizePlus-2.2.1.9-candidate.zip",
-    "LastUpdate": 1792599999,
-    "TestingAssemblyVersion": "2.2.1.9",
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/nearface-0.2.10-tracking-detail-2026-10-22/CustomizePlus-2.2.1.10.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/nearface-0.2.10-tracking-detail-2026-10-22/CustomizePlus-2.2.1.10.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/nearface-0.2.10-tracking-detail-2026-10-22/CustomizePlus-2.2.1.10.zip",
+    "LastUpdate": 1792652245,
+    "TestingAssemblyVersion": "2.2.1.10",
     "TestingDalamudApiLevel": 15,
-    "Changelog": "Normal update: detailed face 0.2.8, Customize+ 2.2.1.9 and camera R13. Update all three and fully restart FFXIV. Live webcam, native mirror/sculpt and scene hooks still await in-game validation. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/detailed-face-mirror-camera-r13-testing-2026-10-21"
+    "Changelog": "Normal tracking update: adaptive detail filtering, signed gaze neutral, independent inner/outer brows, closed-lip jaw separation, blink-aware pupils and bounded combined cheeks. Update both NearFace0.2.10 and Customize+2.2.1.10. No profiles/new shortcuts. Native visual validation pending. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/nearface-0.2.10-tracking-detail-2026-10-22"
   },
   {
     "Author": "NearFace contributors",
     "Name": "NearFace (detailed face + small mirror)",
     "InternalName": "NearFaceDiagnostics",
-    "AssemblyVersion": "0.2.9.0",
-    "Description": "Explicit-start local MediaPipe face input with selected-camera DirectShow/Media Foundation fallback and short capture-gap recovery. Clean compact character face mirror; right-click for camera, neutral calibration and settings. Saved framing and the expanded view are retained. Compatible with Customize+ 2.2.1.9 and camera R13. No tongue tracking, recording, peer synchronization or automatic camera start. Native appearance and hardware behavior still require in-game validation.",
+    "AssemblyVersion": "0.2.10.0",
+    "Description": "Local facial tracking with adaptive detail filtering, signed neutral gaze calibration and a compact character mirror. Matching Customize+2.2.1.10 improves separate inner/outer brow response, closed-lip jaw separation, blink-aware pupil direction and bounded combined cheek motion. Existing camera start and channel choices remain explicit. No response presets, new shortcuts, tongue tracking, pupil-size tracking or peer synchronization. Physical webcam and native sculpt appearance require validation.",
     "ApplicableVersion": "any",
     "Tags": [
       "local",
@@ -108,12 +108,12 @@
     "LoadPriority": 0,
     "Punchline": "Local face controls and read-only bone inventory for the matching C+ fork.",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/nearface-0.2.9-camera-recovery-2026-10-22/NearFaceDiagnostics-0.2.9.0.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/nearface-0.2.9-camera-recovery-2026-10-22/NearFaceDiagnostics-0.2.9.0.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/nearface-0.2.9-camera-recovery-2026-10-22/NearFaceDiagnostics-0.2.9.0.zip",
-    "LastUpdate": 1792645032,
-    "TestingAssemblyVersion": "0.2.9.0",
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/nearface-0.2.10-tracking-detail-2026-10-22/NearFaceDiagnostics-0.2.10.0.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/nearface-0.2.10-tracking-detail-2026-10-22/NearFaceDiagnostics-0.2.10.0.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/nearface-0.2.10-tracking-detail-2026-10-22/NearFaceDiagnostics-0.2.10.0.zip",
+    "LastUpdate": 1792652245,
+    "TestingAssemblyVersion": "0.2.10.0",
     "TestingDalamudApiLevel": 15,
-    "Changelog": "Normal update: selected-camera Windows backend fallback, fresh-frame recovery after short capture gaps and a cleaner right-click face mirror. Existing C+ 2.2.1.9 and camera R13 remain compatible. Physical webcam and native game appearance still require validation. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/nearface-0.2.9-camera-recovery-2026-10-22"
+    "Changelog": "Normal tracking update: adaptive detail filtering, signed gaze neutral, independent inner/outer brows, closed-lip jaw separation, blink-aware pupils and bounded combined cheeks. Update both NearFace0.2.10 and Customize+2.2.1.10. No profiles/new shortcuts. Native visual validation pending. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/nearface-0.2.10-tracking-detail-2026-10-22"
   }
 ]
