@@ -93,8 +93,8 @@
     "Author": "NearFace contributors",
     "Name": "NearFace (detailed face + small mirror)",
     "InternalName": "NearFaceDiagnostics",
-    "AssemblyVersion": "0.2.8.0",
-    "Description": "Explicit-start local MediaPipe facial input, compact resizable character mirror with Start/Stop/Neutral controls and saved framing. Optional pupil, cheek puff/squint, nose and lip detail retargeting through matching Customize+ 2.2.1.9. Numeric head input supports optional R13 scene free look. No tongue tracking, recording, peer synchronization or automatic camera start. New native behavior requires game validation.",
+    "AssemblyVersion": "0.2.9.0",
+    "Description": "Explicit-start local MediaPipe face input with selected-camera DirectShow/Media Foundation fallback and short capture-gap recovery. Clean compact character face mirror; right-click for camera, neutral calibration and settings. Saved framing and the expanded view are retained. Compatible with Customize+ 2.2.1.9 and camera R13. No tongue tracking, recording, peer synchronization or automatic camera start. Native appearance and hardware behavior still require in-game validation.",
     "ApplicableVersion": "any",
     "Tags": [
       "local",
@@ -108,12 +108,12 @@
     "LoadPriority": 0,
     "Punchline": "Local face controls and read-only bone inventory for the matching C+ fork.",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/detailed-face-mirror-camera-r13-testing-2026-10-21/NearFaceDiagnostics-0.2.8.0-candidate.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/detailed-face-mirror-camera-r13-testing-2026-10-21/NearFaceDiagnostics-0.2.8.0-candidate.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/detailed-face-mirror-camera-r13-testing-2026-10-21/NearFaceDiagnostics-0.2.8.0-candidate.zip",
-    "LastUpdate": 1792600000,
-    "TestingAssemblyVersion": "0.2.8.0",
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/nearface-0.2.9-camera-recovery-2026-10-22/NearFaceDiagnostics-0.2.9.0.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/nearface-0.2.9-camera-recovery-2026-10-22/NearFaceDiagnostics-0.2.9.0.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/nearface-0.2.9-camera-recovery-2026-10-22/NearFaceDiagnostics-0.2.9.0.zip",
+    "LastUpdate": 1792645033,
+    "TestingAssemblyVersion": "0.2.9.0",
     "TestingDalamudApiLevel": 15,
-    "Changelog": "Normal update: detailed face 0.2.8, Customize+ 2.2.1.9 and camera R13. Update all three and fully restart FFXIV. Live webcam, native mirror/sculpt and scene hooks still await in-game validation. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/detailed-face-mirror-camera-r13-testing-2026-10-21"
+    "Changelog": "Normal update: selected-camera Windows backend fallback, fresh-frame recovery after short capture gaps and a cleaner right-click face mirror. Existing C+ 2.2.1.9 and camera R13 remain compatible. Physical webcam and native game appearance still require validation. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/nearface-0.2.9-camera-recovery-2026-10-22"
   }
 ]
