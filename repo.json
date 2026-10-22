@@ -67,10 +67,10 @@
     "Author": "Risa and Contributors",
     "Name": "Customize+ (local NearFace fork)",
     "Punchline": "Customize your character beyond FFXIV's limitations.",
-    "Description": "Local NearFace detail retargeting: independent inner/outer brows, mouthClose-aware lips with separate jaw motion, bounded blink-aware pupil direction and combined puff/smile/squint cheeks. Existing ownership, native hooks, calibration opt-in, head masking and saved C+ profiles are preserved. Matching NearFace0.2.10 recommended. Native sculpt appearance remains unverified; no peer pose synchronization.",
+    "Description": "Cooperative local NearFace retargeting with bounded lateral jaw motion and independent backward mouth-corner dimple expression. Existing Live mouth enables jaw tracking; lip detail enables corners, and cheek detail additionally enables a small matching cheek inset. Preserves previous detailed face improvements, saved C+ profiles, native hooks, ownership, eye calibration and head masking. Compatible with unchanged NearFace0.2.10. Native sculpt appearance remains unverified; no peer synchronization or new shortcuts.",
     "InternalName": "CustomizePlus",
     "ApplicableVersion": "any",
-    "AssemblyVersion": "2.2.1.10",
+    "AssemblyVersion": "2.2.1.11",
     "RepoUrl": "https://github.com/Aether-Tools/CustomizePlus",
     "Tags": [
       "Anamnesis",
@@ -81,13 +81,13 @@
     "ImageUrls": null,
     "IconUrl": "https://raw.githubusercontent.com/Aether-Tools/CustomizePlus/main/Data/icon.png",
     "DalamudApiLevel": 15,
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/nearface-0.2.10-tracking-detail-2026-10-22/CustomizePlus-2.2.1.10.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/nearface-0.2.10-tracking-detail-2026-10-22/CustomizePlus-2.2.1.10.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/nearface-0.2.10-tracking-detail-2026-10-22/CustomizePlus-2.2.1.10.zip",
-    "LastUpdate": 1792652245,
-    "TestingAssemblyVersion": "2.2.1.10",
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/customizeplus-2.2.1.11-jaw-dimple-2026-10-22/CustomizePlus-2.2.1.11.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/customizeplus-2.2.1.11-jaw-dimple-2026-10-22/CustomizePlus-2.2.1.11.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/customizeplus-2.2.1.11-jaw-dimple-2026-10-22/CustomizePlus-2.2.1.11.zip",
+    "LastUpdate": 1792657519,
+    "TestingAssemblyVersion": "2.2.1.11",
     "TestingDalamudApiLevel": 15,
-    "Changelog": "Normal tracking update: adaptive detail filtering, signed gaze neutral, independent inner/outer brows, closed-lip jaw separation, blink-aware pupils and bounded combined cheeks. Update both NearFace0.2.10 and Customize+2.2.1.10. No profiles/new shortcuts. Native visual validation pending. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/nearface-0.2.10-tracking-detail-2026-10-22"
+    "Changelog": "Normal update: lateral jaw tracking and independent left/right dimple expression through existing mouth/lip/cheek controls. NearFace0.2.10 is unchanged. No new profiles/shortcuts. Native visual validation pending. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/customizeplus-2.2.1.11-jaw-dimple-2026-10-22"
   },
   {
     "Author": "NearFace contributors",
