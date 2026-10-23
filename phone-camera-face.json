@@ -41,9 +41,9 @@
   },
   {
     "Author": "YF",
-    "Name": "Musical Guide (local camera R15)",
+    "Name": "Musical Guide (local camera R16)",
     "InternalName": "MusicalGuideLocalCamera",
-    "Description": "Brief tracking gaps preserve the calibrated center for up to one second. Three clean unique frames spanning at least sixty milliseconds are required before bounded look resumes. Long loss, source/session changes and camera ownership changes still require full calibration. Native camera guards, head position, mounts and hand clipping are preserved.",
+    "Description": "Separates fresh head input from actual local camera angle callback use. Shows raw, neutral, filtered and output angles, sample quality/age, local/nonzero callback counts and last C+ render status. Existing camera/native ABI, mount, head position and hand clipping behavior are unchanged.",
     "RepoUrl": "https://github.com/Sidiousious/musical-guide",
     "Tags": [
       "Camera"
@@ -51,17 +51,17 @@
     "IconUrl": "https://yfplugins.kinkop.eu/musical-guide.png",
     "Punchline": "Enhanced camera distance control and first-person experience.",
     "LoadPriority": -1,
-    "AssemblyVersion": "1.8.0.17",
+    "AssemblyVersion": "1.8.0.18",
     "DalamudApiLevel": 15,
     "ApplicableVersion": "any",
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-response-camera-r15-2026-10-23/MusicalGuideLocalCamera-1.8.0.17.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-response-camera-r15-2026-10-23/MusicalGuideLocalCamera-1.8.0.17.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-response-camera-r15-2026-10-23/MusicalGuideLocalCamera-1.8.0.17.zip",
-    "LastUpdate": 1792723944,
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-response-camera-r16-2026-10-23/MusicalGuideLocalCamera-1.8.0.18.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-response-camera-r16-2026-10-23/MusicalGuideLocalCamera-1.8.0.18.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-response-camera-r16-2026-10-23/MusicalGuideLocalCamera-1.8.0.18.zip",
+    "LastUpdate": 1792743979,
     "CanUnloadAsync": false,
-    "TestingAssemblyVersion": "1.8.0.17",
+    "TestingAssemblyVersion": "1.8.0.18",
     "TestingDalamudApiLevel": 15,
-    "Changelog": "Normal update: signed lateral lip/jaw neutral; time-bounded expression median; preserve center across brief tracking loss. No native hook or paid sculpt changes; native game acceptance pending. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/face-response-camera-r15-2026-10-23"
+    "Changelog": "Normal update: session-only measured eye ranges and explicit face overlay recovery; camera input/application diagnostics. Camera movement, physical webcam and native sculpt behavior require in-game acceptance. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/face-response-camera-r16-2026-10-23"
   },
   {
     "Author": "Risa and Contributors",
@@ -93,8 +93,8 @@
     "Author": "NearFace contributors",
     "Name": "NearFace (detailed face + small mirror)",
     "InternalName": "NearFaceDiagnostics",
-    "AssemblyVersion": "0.2.13.0",
-    "Description": "Local face and head tracking with optional 10-60 FPS capture target, signed lateral lip/jaw neutral calibration and expression filtering that expires old measurements at low actual FPS. Existing explicit start and compact character mirror. Actual capture speed depends on camera and CPU.",
+    "AssemblyVersion": "0.2.14.0",
+    "Description": "Local face and head tracking with measured session-only per-eye open/closed ranges, explicit character overlay recovery and duplicate-copy warnings. Existing signed lip/jaw neutral calibration, 10-60 FPS target and compact mirror. Nothing opens the camera automatically.",
     "ApplicableVersion": "any",
     "Tags": [
       "local",
@@ -108,12 +108,12 @@
     "LoadPriority": 0,
     "Punchline": "Local face controls and read-only bone inventory for the matching C+ fork.",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-response-camera-r15-2026-10-23/NearFaceDiagnostics-0.2.13.0.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-response-camera-r15-2026-10-23/NearFaceDiagnostics-0.2.13.0.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-response-camera-r15-2026-10-23/NearFaceDiagnostics-0.2.13.0.zip",
-    "LastUpdate": 1792723944,
-    "TestingAssemblyVersion": "0.2.13.0",
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-response-camera-r16-2026-10-23/NearFaceDiagnostics-0.2.14.0.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-response-camera-r16-2026-10-23/NearFaceDiagnostics-0.2.14.0.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-response-camera-r16-2026-10-23/NearFaceDiagnostics-0.2.14.0.zip",
+    "LastUpdate": 1792743979,
+    "TestingAssemblyVersion": "0.2.14.0",
     "TestingDalamudApiLevel": 15,
-    "Changelog": "Normal update: signed lateral lip/jaw neutral; time-bounded expression median; preserve center across brief tracking loss. No native hook or paid sculpt changes; native game acceptance pending. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/face-response-camera-r15-2026-10-23"
+    "Changelog": "Normal update: session-only measured eye ranges and explicit face overlay recovery; camera input/application diagnostics. Camera movement, physical webcam and native sculpt behavior require in-game acceptance. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/face-response-camera-r16-2026-10-23"
   }
 ]
