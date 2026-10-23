@@ -41,9 +41,9 @@
   },
   {
     "Author": "YF",
-    "Name": "Musical Guide (local camera R16)",
+    "Name": "Musical Guide (local camera R17)",
     "InternalName": "MusicalGuideLocalCamera",
-    "Description": "Separates fresh head input from actual local camera angle callback use. Shows raw, neutral, filtered and output angles, sample quality/age, local/nonzero callback counts and last C+ render status. Existing camera/native ABI, mount, head position and hand clipping behavior are unchanged.",
+    "Description": "Consumes head yaw/pitch during native scene view-matrix construction, restoring scene look-at immediately. Exact executable/function hash and local first-person gates; mouse/actor directions, eye position and mount behavior unchanged. In-game acceptance pending.",
     "RepoUrl": "https://github.com/Sidiousious/musical-guide",
     "Tags": [
       "Camera"
@@ -51,26 +51,26 @@
     "IconUrl": "https://yfplugins.kinkop.eu/musical-guide.png",
     "Punchline": "Enhanced camera distance control and first-person experience.",
     "LoadPriority": -1,
-    "AssemblyVersion": "1.8.0.18",
+    "AssemblyVersion": "1.8.0.19",
     "DalamudApiLevel": 15,
     "ApplicableVersion": "any",
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-response-camera-r16-2026-10-23/MusicalGuideLocalCamera-1.8.0.18.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-response-camera-r16-2026-10-23/MusicalGuideLocalCamera-1.8.0.18.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-response-camera-r16-2026-10-23/MusicalGuideLocalCamera-1.8.0.18.zip",
-    "LastUpdate": 1792743979,
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/native-face-view-r17-2026-10-23/MusicalGuideLocalCamera-1.8.0.19.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/native-face-view-r17-2026-10-23/MusicalGuideLocalCamera-1.8.0.19.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/native-face-view-r17-2026-10-23/MusicalGuideLocalCamera-1.8.0.19.zip",
+    "LastUpdate": 1792758240,
     "CanUnloadAsync": false,
-    "TestingAssemblyVersion": "1.8.0.18",
+    "TestingAssemblyVersion": "1.8.0.19",
     "TestingDalamudApiLevel": 15,
-    "Changelog": "Normal update: session-only measured eye ranges and explicit face overlay recovery; camera input/application diagnostics. Camera movement, physical webcam and native sculpt behavior require in-game acceptance. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/face-response-camera-r16-2026-10-23"
+    "Changelog": "Normal update: native eyelid rotation/contact and stronger lip/cheek response; head yaw/pitch consumed by scene view builder. Native game acceptance pending. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/native-face-view-r17-2026-10-23"
   },
   {
     "Author": "Risa and Contributors",
     "Name": "Customize+ (local NearFace fork)",
     "Punchline": "Customize your character beyond FFXIV's limitations.",
-    "Description": "More visible bounded eyebrow, cheek puff and nose expressions; calibrated blink now includes matching squint/wide response. Existing eye opt-in, jaw/lip behavior and ownership remain. Native sculpt appearance pending.",
+    "Description": "Local face driver with native measured eyelid rotations on the matching reference rig, bounded endpoint contact and stronger separate lip and cheek response. Other body profiles preserved. Native game appearance acceptance pending.",
     "InternalName": "CustomizePlus",
     "ApplicableVersion": "any",
-    "AssemblyVersion": "2.2.1.12",
+    "AssemblyVersion": "2.2.1.13",
     "RepoUrl": "https://github.com/Aether-Tools/CustomizePlus",
     "Tags": [
       "Anamnesis",
@@ -81,20 +81,20 @@
     "ImageUrls": null,
     "IconUrl": "https://raw.githubusercontent.com/Aether-Tools/CustomizePlus/main/Data/icon.png",
     "DalamudApiLevel": 15,
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-visibility-camera-r14-2026-10-22/CustomizePlus-2.2.1.12.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-visibility-camera-r14-2026-10-22/CustomizePlus-2.2.1.12.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-visibility-camera-r14-2026-10-22/CustomizePlus-2.2.1.12.zip",
-    "LastUpdate": 1792680301,
-    "TestingAssemblyVersion": "2.2.1.12",
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/native-face-view-r17-2026-10-23/CustomizePlus-2.2.1.13.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/native-face-view-r17-2026-10-23/CustomizePlus-2.2.1.13.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/native-face-view-r17-2026-10-23/CustomizePlus-2.2.1.13.zip",
+    "LastUpdate": 1792758240,
+    "TestingAssemblyVersion": "2.2.1.13",
     "TestingDalamudApiLevel": 15,
-    "Changelog": "Normal update: optional10-60FPS with measured processing rate; stronger bounded brows/cheeks/nose; calibrated blink+squint response; explicit webcam look start. No new shortcuts/profiles. Native appearance and physical-camera performance pending. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/face-visibility-camera-r14-2026-10-22"
+    "Changelog": "Normal update: native eyelid rotation/contact and stronger lip/cheek response; head yaw/pitch consumed by scene view builder. Native game acceptance pending. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/native-face-view-r17-2026-10-23"
   },
   {
     "Author": "NearFace contributors",
     "Name": "NearFace (detailed face + small mirror)",
     "InternalName": "NearFaceDiagnostics",
-    "AssemblyVersion": "0.2.14.0",
-    "Description": "Local face and head tracking with measured session-only per-eye open/closed ranges, explicit character overlay recovery and duplicate-copy warnings. Existing signed lip/jaw neutral calibration, 10-60 FPS target and compact mirror. Nothing opens the camera automatically.",
+    "AssemblyVersion": "0.2.15.0",
+    "Description": "Local face/head tracking, per-eye range calibration, mirror and separate upper/lower lip tests. Matching C+ 2.2.1.13 uses native lid rotation with final contact. Webcam helper and capture behavior unchanged.",
     "ApplicableVersion": "any",
     "Tags": [
       "local",
@@ -108,12 +108,12 @@
     "LoadPriority": 0,
     "Punchline": "Local face controls and read-only bone inventory for the matching C+ fork.",
     "AcceptsFeedback": true,
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-response-camera-r16-2026-10-23/NearFaceDiagnostics-0.2.14.0.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-response-camera-r16-2026-10-23/NearFaceDiagnostics-0.2.14.0.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/face-response-camera-r16-2026-10-23/NearFaceDiagnostics-0.2.14.0.zip",
-    "LastUpdate": 1792743979,
-    "TestingAssemblyVersion": "0.2.14.0",
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/native-face-view-r17-2026-10-23/NearFaceDiagnostics-0.2.15.0.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/native-face-view-r17-2026-10-23/NearFaceDiagnostics-0.2.15.0.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/native-face-view-r17-2026-10-23/NearFaceDiagnostics-0.2.15.0.zip",
+    "LastUpdate": 1792758240,
+    "TestingAssemblyVersion": "0.2.15.0",
     "TestingDalamudApiLevel": 15,
-    "Changelog": "Normal update: session-only measured eye ranges and explicit face overlay recovery; camera input/application diagnostics. Camera movement, physical webcam and native sculpt behavior require in-game acceptance. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/face-response-camera-r16-2026-10-23"
+    "Changelog": "Normal update: native eyelid rotation/contact and stronger lip/cheek response; head yaw/pitch consumed by scene view builder. Native game acceptance pending. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/native-face-view-r17-2026-10-23"
   }
 ]
