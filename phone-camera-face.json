@@ -115,5 +115,37 @@
     "TestingAssemblyVersion": "0.2.15.0",
     "TestingDalamudApiLevel": 15,
     "Changelog": "Normal update: native eyelid rotation/contact and stronger lip/cheek response; head yaw/pitch consumed by scene view builder. Native game acceptance pending. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/native-face-view-r17-2026-10-23"
+  },
+  {
+    "Author": "SmolShar; original It's Up by Juan Medina",
+    "Name": "It's Up Combo",
+    "InternalName": "ItsUpCombo",
+    "AssemblyVersion": "0.1.0.0",
+    "Description": "Shows Samurai's native PvE combo branches, level-adjusted actions and Meikyo options with gentle press and transition feedback. Finishers clear the combo without a false link back to the starter. Sage gets a compact, independent core-spell grid with native trait and Eukrasia replacements. The core-action area and It's Up cooldown reminders move and resize independently and remain visible when the game HUD is hidden. Use /itsupcombo for settings or /itsupcombo move to arrange both panels. This plugin only displays information and never executes actions. Other jobs retain the original configurable cooldown reminders. The core-action area currently supports Samurai and Sage.",
+    "ApplicableVersion": "any",
+    "RepoUrl": "https://github.com/SmolShar/NearVoice-Downloads",
+    "Tags": [
+      "combat",
+      "cooldown",
+      "reminder",
+      "hud",
+      "samurai",
+      "sage"
+    ],
+    "DalamudApiLevel": 15,
+    "LoadRequiredState": 0,
+    "LoadSync": false,
+    "CanUnloadAsync": false,
+    "LoadPriority": 0,
+    "IconUrl": "https://raw.githubusercontent.com/juan-medina/ItsUp/main/ItsUp/icon.png",
+    "Punchline": "Minimal Samurai and Sage HUD with independent cooldown reminders.",
+    "AcceptsFeedback": true,
+    "IsHide": false,
+    "IsTestingExclusive": false,
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/its-up-combo-0.1.0-2026-10-24/ItsUpCombo-0.1.0.0.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/its-up-combo-0.1.0-2026-10-24/ItsUpCombo-0.1.0.0.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/its-up-combo-0.1.0-2026-10-24/ItsUpCombo-0.1.0.0.zip",
+    "LastUpdate": 1792872307
   }
 ]
+

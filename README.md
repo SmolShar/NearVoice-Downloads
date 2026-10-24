@@ -1,6 +1,6 @@
 # NearVoice, phone, camera and face — one installer index
 
-This single canonical Dalamud repository URL lists all five local plugins:
+This single canonical Dalamud repository URL lists all six local plugins:
 
 ```text
 https://raw.githubusercontent.com/SmolShar/NearVoice-Downloads/main/repo.json
@@ -13,6 +13,7 @@ https://raw.githubusercontent.com/SmolShar/NearVoice-Downloads/main/repo.json
 | Musical Guide — local camera R8 | `MusicalGuideLocalCamera` | 1.8.0.10 |
 | Customize+ — local NearFace fork | `CustomizePlus` | 2.2.1.6 |
 | NearFace — local webcam/face/head input | `NearFaceDiagnostics` | 0.2.5.0 |
+| It's Up Combo — Samurai and Sage HUD | `ItsUpCombo` | 0.1.0.0 |
 
 ## Install and update
 
@@ -46,6 +47,19 @@ Current camera/webcam release:
 The source-URL update rule is documented by the version-pinned
 [Dalamud PluginManager](https://github.com/goatcorp/Dalamud/blob/15.0.3.8/Dalamud/Plugin/Internal/PluginManager.cs).
 
+## It's Up Combo — Samurai and Sage
+
+Install **It's Up Combo** from the same `/xlplugins` repository. `/itsupcombo`
+opens settings; `/itsupcombo move` arranges the independently movable/resizable
+core-action panel and cooldown strip; `/itsupcombo lock` finishes editing.
+Samurai shows native combo branches and Meikyo options. Sage shows core spells
+with native Eukrasia/trait replacements. The overlay remains visible when the
+game HUD is hidden; it never invokes actions.
+
+[Download 0.1.0.0 and corresponding source](https://github.com/SmolShar/NearVoice-Downloads/releases/tag/its-up-combo-0.1.0-2026-10-24).
+Release/x64 compilation, 59 state/cooldown checks and 10 headless native ImGui
+checks passed. Live FFXIV rendering/combat remains unverified.
+
 ## NearVoice details — experimental 0.2.1
 
 NearVoice is a modified version of [Ricimon's ProximityVoiceChat](https://github.com/Ricimon/FFXIV-ProximityVoiceChat). Original copyright (c) 2024 Ricimon and the MIT license are retained. It is not an official upstream or Square Enix release. This repository contains only the public installer index, release binary and notices; the fork's development source is maintained separately.
@@ -73,3 +87,4 @@ The original [LICENSE](LICENSE), [third-party notices](THIRD-PARTY-NOTICES.md), 
 ## 0.2.1 hotfix
 
 Fixes native WebRTC/VAD loading when Dalamud loads the managed plugin from memory (Assembly.Location is empty). The old path failure could remove a discovered peer and leave only yourself in the list. PluginInterface.AssemblyLocation supplies the real plugin directory. Seven focused regression checks pass with the exact initializer, real native calls, missing-file checks, immutable paths and original-native preload isolation. The earlier 63 checks are prior evidence; two-computer in-game voice needs a fresh test after updating.
+
