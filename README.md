@@ -49,16 +49,23 @@ The source-URL update rule is documented by the version-pinned
 
 ## It's Up Combo — Samurai and Sage
 
-Install **It's Up Combo** from the same `/xlplugins` repository. `/itsupcombo`
-opens settings; `/itsupcombo move` arranges the independently movable/resizable
-core-action panel and cooldown strip; `/itsupcombo lock` finishes editing.
-Samurai shows native combo branches and Meikyo options. Sage shows core spells
-with native Eukrasia/trait replacements. The overlay remains visible when the
-game HUD is hidden; it never invokes actions.
+Install **It's Up Combo 0.1.1.0** from the same `/xlplugins` repository. `/itsupcombo`
+opens settings; `/itsupcombo move` arranges three independently movable/resizable
+panels: core actions, resource/proc availability, and cooldown reminders.
+`/itsupcombo lock` finishes editing. Key hints sit below their icons.
 
-[Download 0.1.0.0 and corresponding source](https://github.com/SmolShar/NearVoice-Downloads/releases/tag/its-up-combo-0.1.0-2026-10-24).
-Release/x64 compilation, 59 state/cooldown checks and 10 headless native ImGui
-checks passed. Live FFXIV rendering/combat remains unverified.
+Only actions placed on normal or cross hotbars are shown, including hidden and
+unbound slots. Learned actions already ready at login or outside combat can be
+shown immediately. Samurai's Kenki/Sen/Meditation and native proc actions, plus
+Sage's Addersgall/Addersting actions, appear only when their resource requirements
+and own cooldowns pass. Shared GCDs do not make the resource panel flicker.
+Sage core spells use native trait/Eukrasia replacements. The overlay stays visible
+when the game HUD is hidden and never invokes actions or changes hotbars.
+
+[Download 0.1.1.0 and corresponding source](https://github.com/SmolShar/NearVoice-Downloads/releases/tag/its-up-combo-0.1.1-2026-10-24).
+Final release evidence records 106 production-linked model/resource/cooldown
+scenarios and 24 native ImGui harness scenarios. Live FFXIV rendering,
+combat timing and physical game input remain unverified.
 
 ## NearVoice details — experimental 0.2.1
 

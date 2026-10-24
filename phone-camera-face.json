@@ -120,8 +120,8 @@
     "Author": "SmolShar; original It's Up by Juan Medina",
     "Name": "It's Up Combo",
     "InternalName": "ItsUpCombo",
-    "AssemblyVersion": "0.1.0.0",
-    "Description": "Shows Samurai's native PvE combo branches, level-adjusted actions and Meikyo options with gentle press and transition feedback. Finishers clear the combo without a false link back to the starter. Sage gets a compact, independent core-spell grid with native trait and Eukrasia replacements. The core-action area and It's Up cooldown reminders move and resize independently and remain visible when the game HUD is hidden. Use /itsupcombo for settings or /itsupcombo move to arrange both panels. This plugin only displays information and never executes actions. Other jobs retain the original configurable cooldown reminders. The core-action area currently supports Samurai and Sage.",
+    "AssemblyVersion": "0.1.1.0",
+    "Description": "\r\nShows Samurai's native PvE combo branches and Sage's core spells using actions placed on your hotbars. Ready cooldown reminders appear before the first use and outside combat. A separate resource/proc panel shows eligible Samurai Kenki, Sen, Meditation and follow-up actions, plus Sage Addersgall and Addersting spenders. Real hotbar key labels appear below icons. Three framed panels move and resize independently and remain visible with the game HUD hidden. Gentle transitions preserve press feedback; finishers have no false link back to the starter. Use /itsupcombo for settings or /itsupcombo move to arrange the panels. This plugin only displays information and never executes actions. Core and resource panels currently support Samurai and Sage; other jobs retain configurable cooldown reminders.\r\n    ",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/SmolShar/NearVoice-Downloads",
     "Tags": [
@@ -138,14 +138,16 @@
     "CanUnloadAsync": false,
     "LoadPriority": 0,
     "IconUrl": "https://raw.githubusercontent.com/juan-medina/ItsUp/main/ItsUp/icon.png",
-    "Punchline": "Minimal Samurai and Sage HUD with independent cooldown reminders.",
+    "Punchline": "Compact Samurai and Sage HUD with combo, resource and cooldown panels.",
     "AcceptsFeedback": true,
     "IsHide": false,
     "IsTestingExclusive": false,
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/its-up-combo-0.1.0-2026-10-24/ItsUpCombo-0.1.0.0.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/its-up-combo-0.1.0-2026-10-24/ItsUpCombo-0.1.0.0.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/its-up-combo-0.1.0-2026-10-24/ItsUpCombo-0.1.0.0.zip",
-    "LastUpdate": 1792872307
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/its-up-combo-0.1.1-2026-10-24/ItsUpCombo-0.1.1.0.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/its-up-combo-0.1.1-2026-10-24/ItsUpCombo-0.1.1.0.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/its-up-combo-0.1.1-2026-10-24/ItsUpCombo-0.1.1.0.zip",
+    "LastUpdate": 1792874516,
+    "TestingAssemblyVersion": "0.1.1.0",
+    "TestingDalamudApiLevel": 15,
+    "Changelog": "Üç ayrı panel, hotbara yerleştirilmiş eylemler, hazır kaynak/proc göstergeleri ve tuş ipuçları. Canlı oyun kabul testi henüz yapılmadı. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/its-up-combo-0.1.1-2026-10-24"
   }
 ]
-
