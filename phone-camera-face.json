@@ -120,8 +120,8 @@
     "Author": "SmolShar; original It's Up by Juan Medina",
     "Name": "It's Up Combo",
     "InternalName": "ItsUpCombo",
-    "AssemblyVersion": "0.1.1.0",
-    "Description": "\r\nShows Samurai's native PvE combo branches and Sage's core spells using actions placed on your hotbars. Ready cooldown reminders appear before the first use and outside combat. A separate resource/proc panel shows eligible Samurai Kenki, Sen, Meditation and follow-up actions, plus Sage Addersgall and Addersting spenders. Real hotbar key labels appear below icons. Three framed panels move and resize independently and remain visible with the game HUD hidden. Gentle transitions preserve press feedback; finishers have no false link back to the starter. Use /itsupcombo for settings or /itsupcombo move to arrange the panels. This plugin only displays information and never executes actions. Core and resource panels currently support Samurai and Sage; other jobs retain configurable cooldown reminders.\r\n    ",
+    "AssemblyVersion": "0.1.2.0",
+    "Description": "\r\nShows Samurai's native PvE combo branches and Sage's core spells using actions placed on the current keyboard or controller hotbars. Ready cooldown reminders appear before the first use and outside combat. A separate resource/proc area shows eligible Samurai Kenki, Sen, Meditation and follow-up actions, plus Sage Addersgall and Addersting spenders. Real hotbar key labels appear below icons. The overlay has no background cards or section headings during play; each area moves and resizes independently and remains visible with the game HUD hidden. Interrupted combo transitions continue from their visible positions, and finishers have no false link back to the starter. Use /itsupcombo for settings or /itsupcombo move to arrange the three areas. This plugin only displays information and never executes actions. Core and resource areas currently support Samurai and Sage; other jobs retain configurable cooldown reminders.\r\n    ",
     "ApplicableVersion": "any",
     "RepoUrl": "https://github.com/SmolShar/NearVoice-Downloads",
     "Tags": [
@@ -142,12 +142,12 @@
     "AcceptsFeedback": true,
     "IsHide": false,
     "IsTestingExclusive": false,
-    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/its-up-combo-0.1.1-2026-10-24/ItsUpCombo-0.1.1.0.zip",
-    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/its-up-combo-0.1.1-2026-10-24/ItsUpCombo-0.1.1.0.zip",
-    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/its-up-combo-0.1.1-2026-10-24/ItsUpCombo-0.1.1.0.zip",
-    "LastUpdate": 1792874516,
-    "TestingAssemblyVersion": "0.1.1.0",
+    "DownloadLinkInstall": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/its-up-combo-0.1.2-2026-10-24/ItsUpCombo-0.1.2.0.zip",
+    "DownloadLinkUpdate": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/its-up-combo-0.1.2-2026-10-24/ItsUpCombo-0.1.2.0.zip",
+    "DownloadLinkTesting": "https://github.com/SmolShar/NearVoice-Downloads/releases/download/its-up-combo-0.1.2-2026-10-24/ItsUpCombo-0.1.2.0.zip",
+    "LastUpdate": 1792875519,
+    "TestingAssemblyVersion": "0.1.2.0",
     "TestingDalamudApiLevel": 15,
-    "Changelog": "Üç ayrı panel, hotbara yerleştirilmiş eylemler, hazır kaynak/proc göstergeleri ve tuş ipuçları. Canlı oyun kabul testi henüz yapılmadı. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/its-up-combo-0.1.1-2026-10-24"
+    "Changelog": "Siyah arka planlar ve başlıklar kaldırıldı. Etkin klavye/kontrolcü hotbarları ayrıldı; kesilen kombo geçişleri mevcut konumdan devam eder. Canlı oyun kabul testi henüz yapılmadı. https://github.com/SmolShar/NearVoice-Downloads/releases/tag/its-up-combo-0.1.2-2026-10-24"
   }
 ]

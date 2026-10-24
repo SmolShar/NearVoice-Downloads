@@ -49,22 +49,29 @@ The source-URL update rule is documented by the version-pinned
 
 ## It's Up Combo — Samurai and Sage
 
-Install **It's Up Combo 0.1.1.0** from the same `/xlplugins` repository. `/itsupcombo`
+Install **It's Up Combo 0.1.2.0** from the same `/xlplugins` repository. `/itsupcombo`
 opens settings; `/itsupcombo move` arranges three independently movable/resizable
 panels: core actions, resource/proc availability, and cooldown reminders.
 `/itsupcombo lock` finishes editing. Key hints sit below their icons.
 
-Only actions placed on normal or cross hotbars are shown, including hidden and
-unbound slots. Learned actions already ready at login or outside combat can be
+During play there are no background cards or section headings; only action icons,
+below-icon key hints and optional action names remain. Thin positioning guides
+appear only while editing. Interrupted combo animations continue from the current
+visible position and opacity; repeated/press-only state does not restart a delayed fade.
+
+Only actions placed on the current input mode's hotbars are shown: keyboard uses
+normal bars, controller uses crossbars. Unused controller defaults cannot enter
+the keyboard HUD. Hidden and unbound mounted slots remain supported. Learned
+actions already ready at login or outside combat can be
 shown immediately. Samurai's Kenki/Sen/Meditation and native proc actions, plus
 Sage's Addersgall/Addersting actions, appear only when their resource requirements
 and own cooldowns pass. Shared GCDs do not make the resource panel flicker.
 Sage core spells use native trait/Eukrasia replacements. The overlay stays visible
 when the game HUD is hidden and never invokes actions or changes hotbars.
 
-[Download 0.1.1.0 and corresponding source](https://github.com/SmolShar/NearVoice-Downloads/releases/tag/its-up-combo-0.1.1-2026-10-24).
-Final release evidence records 106 production-linked model/resource/cooldown
-scenarios and 24 native ImGui harness scenarios. Live FFXIV rendering,
+[Download 0.1.2.0 and corresponding source](https://github.com/SmolShar/NearVoice-Downloads/releases/tag/its-up-combo-0.1.2-2026-10-24).
+Final release evidence records 114 production-linked model/resource/cooldown
+scenarios and 31 native ImGui harness scenarios. Live FFXIV rendering,
 combat timing and physical game input remain unverified.
 
 ## NearVoice details — experimental 0.2.1
