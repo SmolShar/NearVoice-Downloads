@@ -49,10 +49,15 @@ The source-URL update rule is documented by the version-pinned
 
 ## It's Up Combo — Samurai and Sage
 
-Install **It's Up Combo 0.1.2.0** from the same `/xlplugins` repository. `/itsupcombo`
+Install **It's Up Combo 0.1.3.0** from the same `/xlplugins` repository. `/itsupcombo`
 opens settings; `/itsupcombo move` arranges three independently movable/resizable
 panels: core actions, resource/proc availability, and cooldown reminders.
 `/itsupcombo lock` finishes editing. Key hints sit below their icons.
+
+Core icons now show a numberless cooldown sweep, dimming while blocked and briefly
+flashing when recast, cast and animation-lock timers permit use. Native cooldown
+checks guard reminders; Meikyo Shisui additionally requires native self-action
+availability. Charge timing tracks the next available use, not full recovery.
 
 During play there are no background cards or section headings; only action icons,
 below-icon key hints and optional action names remain. Thin positioning guides
@@ -69,9 +74,9 @@ and own cooldowns pass. Shared GCDs do not make the resource panel flicker.
 Sage core spells use native trait/Eukrasia replacements. The overlay stays visible
 when the game HUD is hidden and never invokes actions or changes hotbars.
 
-[Download 0.1.2.0 and corresponding source](https://github.com/SmolShar/NearVoice-Downloads/releases/tag/its-up-combo-0.1.2-2026-10-24).
-Final release evidence records 114 production-linked model/resource/cooldown
-scenarios and 31 native ImGui harness scenarios. Live FFXIV rendering,
+[Download 0.1.3.0 and corresponding source](https://github.com/SmolShar/NearVoice-Downloads/releases/tag/its-up-combo-0.1.3-2026-10-25).
+Final release evidence records 122 production-linked model/resource/cooldown
+scenarios and 36 native ImGui harness scenarios. Live FFXIV rendering,
 combat timing and physical game input remain unverified.
 
 ## NearVoice details — experimental 0.2.1
